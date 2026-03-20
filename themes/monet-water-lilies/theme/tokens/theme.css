@@ -1,0 +1,96 @@
+/* monet-water-lilies-theme -- generated design tokens as CSS custom properties */
+
+:root {
+  --md-sys-color-primary: #49567d;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #e0e3ea;
+  --md-sys-color-on-primary-container: #15171d;
+  --md-sys-color-primary-fixed: #e0e3ea;
+  --md-sys-color-primary-fixed-dim: #bec5d9;
+  --md-sys-color-on-primary-fixed: #15171d;
+  --md-sys-color-on-primary-fixed-variant: #384260;
+  --md-sys-color-secondary: #567556;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #e2e8e2;
+  --md-sys-color-on-secondary-container: #171b17;
+  --md-sys-color-tertiary: #67517a;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #e5e1e9;
+  --md-sys-color-on-tertiary-container: #19161c;
+  --md-sys-color-error: #861636;
+  --md-sys-color-on-error: #feffff;
+  --md-sys-color-error-container: #f2d8e0;
+  --md-sys-color-on-error-container: #240e14;
+  --md-sys-color-surface: #C8D0D8;
+  --md-sys-color-on-surface: #2C3652;
+  --md-sys-color-surface-variant: #dee1ec;
+  --md-sys-color-on-surface-variant: #6A7080;
+  --md-sys-color-surface-container-lowest: #dee2e8;
+  --md-sys-color-surface-container-low: #dadfe4;
+  --md-sys-color-surface-container: #d5dbe1;
+  --md-sys-color-surface-container-high: #d1d7de;
+  --md-sys-color-surface-container-highest: #ccd3db;
+  --md-sys-color-outline: #9AA0B0;
+  --md-sys-color-outline-variant: #bdc4da;
+  --md-sys-color-inverse-surface: #252c40;
+  --md-sys-color-inverse-on-surface: #f0f1f3;
+  --md-sys-color-inverse-primary: #bec5d9;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-lily-peach: #835a30;
+  --md-sys-color-on-lily-peach: #ffffff;
+  --md-sys-color-lily-peach-container: #ede5dd;
+  --md-sys-color-on-lily-peach-container: #201912;
+  --md-sys-color-cloud-cream: #826536;
+  --md-sys-color-on-cloud-cream: #ffffff;
+  --md-sys-color-cloud-cream-container: #ece7de;
+  --md-sys-color-on-cloud-cream-container: #1f1b13;
+
+  --md-sys-typescale-brand-font: 'Lora';
+  --md-sys-typescale-plain-font: 'Source Serif 4';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #bec5d9;
+    --md-sys-color-on-primary: #252c40;
+    --md-sys-color-primary-container: #384260;
+    --md-sys-color-on-primary-container: #e0e3ea;
+    --md-sys-color-secondary: #c4d3c4;
+    --md-sys-color-on-secondary: #2b3a2b;
+    --md-sys-color-secondary-container: #405840;
+    --md-sys-color-on-secondary-container: #e2e8e2;
+    --md-sys-color-tertiary: #ccc1d6;
+    --md-sys-color-on-tertiary: #33283d;
+    --md-sys-color-tertiary-container: #4d3d5b;
+    --md-sys-color-on-tertiary-container: #e5e1e9;
+    --md-sys-color-error: #f0a7bc;
+    --md-sys-color-on-error: #570e23;
+    --md-sys-color-error-container: #831535;
+    --md-sys-color-on-error-container: #f2d8e0;
+    --md-sys-color-surface: #101820;
+    --md-sys-color-on-surface: #D0D8E0;
+    --md-sys-color-surface-variant: #374161;
+    --md-sys-color-on-surface-variant: #7A8090;
+    --md-sys-color-surface-container-lowest: #141e29;
+    --md-sys-color-surface-container-low: #131d27;
+    --md-sys-color-surface-container: #121c25;
+    --md-sys-color-surface-container-high: #111a23;
+    --md-sys-color-surface-container-highest: #101921;
+    --md-sys-color-outline: #2A3040;
+    --md-sys-color-outline-variant: #374161;
+    --md-sys-color-inverse-surface: #dee2ec;
+    --md-sys-color-inverse-on-surface: #252c40;
+    --md-sys-color-inverse-primary: #49567d;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-lily-peach: #e3ccb4;
+    --md-sys-color-on-lily-peach: #4a331b;
+    --md-sys-color-lily-peach-container: #6f4c29;
+    --md-sys-color-on-lily-peach-container: #ede5dd;
+    --md-sys-color-cloud-cream: #e0d1b7;
+    --md-sys-color-on-cloud-cream: #47381e;
+    --md-sys-color-cloud-cream-container: #6b542d;
+    --md-sys-color-on-cloud-cream-container: #ece7de;
+  }
+}

@@ -1,0 +1,200 @@
+/* Design System Theme — Auto-generated from design tokens */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --font-brand: 'Libre Baskerville', sans-serif;
+  --font-plain: 'Work Sans', sans-serif;
+
+  --color-error: #861d16;
+  --color-error-container: #f2dad8;
+  --color-inverse-on-surface: #f2f1f1;
+  --color-inverse-primary: #eeb1a9;
+  --color-inverse-surface: #382f2d;
+  --color-on-error: #feffff;
+  --color-on-error-container: #240f0e;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #23110f;
+  --color-on-primary-fixed: #23110f;
+  --color-on-primary-fixed-variant: #802418;
+  --color-on-secondary: #fffeff;
+  --color-on-secondary-container: #141e17;
+  --color-on-surface: #1c1716;
+  --color-on-surface-variant: #5a413e;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #13161f;
+  --color-outline: #966d68;
+  --color-outline-variant: #d5c4c2;
+  --color-primary: #862619;
+  --color-primary-container: #f1dcd9;
+  --color-primary-fixed: #f1dcd9;
+  --color-primary-fixed-dim: #eeb1a9;
+  --color-scrim: #000000;
+  --color-secondary: #3d8054;
+  --color-secondary-container: #dfebe3;
+  --color-shadow: #000000;
+  --color-surface: #faf9f9;
+  --color-surface-container: #f1eeee;
+  --color-surface-container-high: #ece9e8;
+  --color-surface-container-highest: #e8e3e2;
+  --color-surface-container-low: #f5f4f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #eae1e0;
+  --color-tertiary: #3b4d80;
+  --color-tertiary-container: #dee2ec;
+
+  --radius-extra-large: 12px;
+  --radius-extra-small: 2px;
+  --radius-full: 9999px;
+  --radius-large: 8px;
+  --radius-medium: 6px;
+  --radius-none: 0px;
+  --radius-small: 4px;
+
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-2: 8px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  --type-body-large-font-family: Work Sans;
+  --type-body-large-font-size: 16px;
+  --type-body-large-font-weight: 400;
+  --type-body-large-line-height: 24px;
+  --type-body-large-letter-spacing: 0.5px;
+  --type-body-medium-font-family: Work Sans;
+  --type-body-medium-font-size: 14px;
+  --type-body-medium-font-weight: 400;
+  --type-body-medium-line-height: 20px;
+  --type-body-medium-letter-spacing: 0.25px;
+  --type-body-small-font-family: Work Sans;
+  --type-body-small-font-size: 12px;
+  --type-body-small-font-weight: 400;
+  --type-body-small-line-height: 16px;
+  --type-body-small-letter-spacing: 0.4px;
+  --type-display-large-font-family: Libre Baskerville;
+  --type-display-large-font-size: 57px;
+  --type-display-large-font-weight: 400;
+  --type-display-large-line-height: 64px;
+  --type-display-large-letter-spacing: -0.25px;
+  --type-display-medium-font-family: Libre Baskerville;
+  --type-display-medium-font-size: 45px;
+  --type-display-medium-font-weight: 400;
+  --type-display-medium-line-height: 52px;
+  --type-display-medium-letter-spacing: 0px;
+  --type-display-small-font-family: Libre Baskerville;
+  --type-display-small-font-size: 36px;
+  --type-display-small-font-weight: 400;
+  --type-display-small-line-height: 44px;
+  --type-display-small-letter-spacing: 0px;
+  --type-headline-large-font-family: Libre Baskerville;
+  --type-headline-large-font-size: 32px;
+  --type-headline-large-font-weight: 400;
+  --type-headline-large-line-height: 40px;
+  --type-headline-large-letter-spacing: 0px;
+  --type-headline-medium-font-family: Libre Baskerville;
+  --type-headline-medium-font-size: 28px;
+  --type-headline-medium-font-weight: 400;
+  --type-headline-medium-line-height: 36px;
+  --type-headline-medium-letter-spacing: 0px;
+  --type-headline-small-font-family: Libre Baskerville;
+  --type-headline-small-font-size: 24px;
+  --type-headline-small-font-weight: 400;
+  --type-headline-small-line-height: 32px;
+  --type-headline-small-letter-spacing: 0px;
+  --type-label-large-font-family: Work Sans;
+  --type-label-large-font-size: 14px;
+  --type-label-large-font-weight: 500;
+  --type-label-large-line-height: 20px;
+  --type-label-large-letter-spacing: 0.1px;
+  --type-label-medium-font-family: Work Sans;
+  --type-label-medium-font-size: 12px;
+  --type-label-medium-font-weight: 500;
+  --type-label-medium-line-height: 16px;
+  --type-label-medium-letter-spacing: 0.5px;
+  --type-label-small-font-family: Work Sans;
+  --type-label-small-font-size: 11px;
+  --type-label-small-font-weight: 500;
+  --type-label-small-line-height: 16px;
+  --type-label-small-letter-spacing: 0.5px;
+  --type-title-large-font-family: Libre Baskerville;
+  --type-title-large-font-size: 22px;
+  --type-title-large-font-weight: 400;
+  --type-title-large-line-height: 28px;
+  --type-title-large-letter-spacing: 0px;
+  --type-title-medium-font-family: Work Sans;
+  --type-title-medium-font-size: 16px;
+  --type-title-medium-font-weight: 500;
+  --type-title-medium-line-height: 24px;
+  --type-title-medium-letter-spacing: 0.15px;
+  --type-title-small-font-family: Work Sans;
+  --type-title-small-font-size: 14px;
+  --type-title-small-font-weight: 500;
+  --type-title-small-line-height: 20px;
+  --type-title-small-letter-spacing: 0.1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-error: #f0aca7;
+    --color-error-container: #831c15;
+    --color-inverse-on-surface: #382f2d;
+    --color-inverse-primary: #862619;
+    --color-inverse-surface: #e8e3e2;
+    --color-on-error: #57130e;
+    --color-on-error-container: #f2dad8;
+    --color-on-primary: #551810;
+    --color-on-primary-container: #f1dcd9;
+    --color-on-secondary: #20452d;
+    --color-on-secondary-container: #dfebe3;
+    --color-on-surface: #e8e3e2;
+    --color-on-surface-variant: #d5c4c2;
+    --color-on-tertiary: #202945;
+    --color-on-tertiary-container: #dee2ec;
+    --color-outline: #ab8a86;
+    --color-outline-variant: #5a413e;
+    --color-primary: #eeb1a9;
+    --color-primary-container: #802418;
+    --color-scrim: #000000;
+    --color-secondary: #b9dec6;
+    --color-secondary-container: #316744;
+    --color-shadow: #000000;
+    --color-surface: #100e0d;
+    --color-surface-container: #211c1b;
+    --color-surface-container-high: #2f2827;
+    --color-surface-container-highest: #3d3332;
+    --color-surface-container-low: #1c1716;
+    --color-surface-container-lowest: #0a0909;
+    --color-surface-variant: #5a413e;
+    --color-tertiary: #b9c2de;
+    --color-tertiary-container: #303e68;
+  }
+}
+
+/* M3 State Layers — hover 8%, focus 12%, pressed 12%, disabled 38% */
+.m3-interactive {
+  position: relative;
+  overflow: hidden;
+}
+.m3-interactive .state-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.m3-interactive:hover .state-layer { opacity: 0.08; }
+.m3-interactive:focus-visible .state-layer { opacity: 0.12; }
+.m3-interactive:active .state-layer { opacity: 0.12; }
+.m3-interactive:disabled .state-layer,
+.m3-interactive[aria-disabled="true"] .state-layer { opacity: 0; }

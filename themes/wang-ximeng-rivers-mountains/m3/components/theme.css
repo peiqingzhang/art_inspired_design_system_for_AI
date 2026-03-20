@@ -1,0 +1,200 @@
+/* Design System Theme — Auto-generated from design tokens */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --font-brand: 'Noto Serif Display', sans-serif;
+  --font-plain: 'Noto Sans', sans-serif;
+
+  --color-error: #864a16;
+  --color-error-container: #f2e4d8;
+  --color-inverse-on-surface: #f1f2f2;
+  --color-inverse-primary: #b7e0d8;
+  --color-inverse-surface: #2d3836;
+  --color-on-error: #feffff;
+  --color-on-error-container: #24180e;
+  --color-on-primary: #fffefe;
+  --color-on-primary-container: #131f1d;
+  --color-on-primary-fixed: #131f1d;
+  --color-on-primary-fixed-variant: #2d6b5f;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #1f1c13;
+  --color-on-surface: #161c1b;
+  --color-on-surface-variant: #3e5a54;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #201912;
+  --color-outline: #68968d;
+  --color-outline-variant: #c2d5d1;
+  --color-primary: #368273;
+  --color-primary-container: #deece9;
+  --color-primary-fixed: #deece9;
+  --color-primary-fixed-dim: #b7e0d8;
+  --color-scrim: #000000;
+  --color-secondary: #827034;
+  --color-secondary-container: #ede9dd;
+  --color-shadow: #000000;
+  --color-surface: #f9fafa;
+  --color-surface-container: #eef1f0;
+  --color-surface-container-high: #e8eceb;
+  --color-surface-container-highest: #e2e8e7;
+  --color-surface-container-low: #f4f5f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #e0eae8;
+  --color-tertiary: #845b2d;
+  --color-tertiary-container: #eee6dc;
+
+  --radius-extra-large: 32px;
+  --radius-extra-small: 8px;
+  --radius-full: 9999px;
+  --radius-large: 24px;
+  --radius-medium: 16px;
+  --radius-none: 0px;
+  --radius-small: 12px;
+
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-2: 8px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  --type-body-large-font-family: Noto Sans;
+  --type-body-large-font-size: 16px;
+  --type-body-large-font-weight: 400;
+  --type-body-large-line-height: 24px;
+  --type-body-large-letter-spacing: 0.5px;
+  --type-body-medium-font-family: Noto Sans;
+  --type-body-medium-font-size: 14px;
+  --type-body-medium-font-weight: 400;
+  --type-body-medium-line-height: 20px;
+  --type-body-medium-letter-spacing: 0.25px;
+  --type-body-small-font-family: Noto Sans;
+  --type-body-small-font-size: 12px;
+  --type-body-small-font-weight: 400;
+  --type-body-small-line-height: 16px;
+  --type-body-small-letter-spacing: 0.4px;
+  --type-display-large-font-family: Noto Serif Display;
+  --type-display-large-font-size: 57px;
+  --type-display-large-font-weight: 400;
+  --type-display-large-line-height: 64px;
+  --type-display-large-letter-spacing: -0.25px;
+  --type-display-medium-font-family: Noto Serif Display;
+  --type-display-medium-font-size: 45px;
+  --type-display-medium-font-weight: 400;
+  --type-display-medium-line-height: 52px;
+  --type-display-medium-letter-spacing: 0px;
+  --type-display-small-font-family: Noto Serif Display;
+  --type-display-small-font-size: 36px;
+  --type-display-small-font-weight: 400;
+  --type-display-small-line-height: 44px;
+  --type-display-small-letter-spacing: 0px;
+  --type-headline-large-font-family: Noto Serif Display;
+  --type-headline-large-font-size: 32px;
+  --type-headline-large-font-weight: 400;
+  --type-headline-large-line-height: 40px;
+  --type-headline-large-letter-spacing: 0px;
+  --type-headline-medium-font-family: Noto Serif Display;
+  --type-headline-medium-font-size: 28px;
+  --type-headline-medium-font-weight: 400;
+  --type-headline-medium-line-height: 36px;
+  --type-headline-medium-letter-spacing: 0px;
+  --type-headline-small-font-family: Noto Serif Display;
+  --type-headline-small-font-size: 24px;
+  --type-headline-small-font-weight: 400;
+  --type-headline-small-line-height: 32px;
+  --type-headline-small-letter-spacing: 0px;
+  --type-label-large-font-family: Noto Sans;
+  --type-label-large-font-size: 14px;
+  --type-label-large-font-weight: 500;
+  --type-label-large-line-height: 20px;
+  --type-label-large-letter-spacing: 0.1px;
+  --type-label-medium-font-family: Noto Sans;
+  --type-label-medium-font-size: 12px;
+  --type-label-medium-font-weight: 500;
+  --type-label-medium-line-height: 16px;
+  --type-label-medium-letter-spacing: 0.5px;
+  --type-label-small-font-family: Noto Sans;
+  --type-label-small-font-size: 11px;
+  --type-label-small-font-weight: 500;
+  --type-label-small-line-height: 16px;
+  --type-label-small-letter-spacing: 0.5px;
+  --type-title-large-font-family: Noto Serif Display;
+  --type-title-large-font-size: 22px;
+  --type-title-large-font-weight: 400;
+  --type-title-large-line-height: 28px;
+  --type-title-large-letter-spacing: 0px;
+  --type-title-medium-font-family: Noto Sans;
+  --type-title-medium-font-size: 16px;
+  --type-title-medium-font-weight: 500;
+  --type-title-medium-line-height: 24px;
+  --type-title-medium-letter-spacing: 0.15px;
+  --type-title-small-font-family: Noto Sans;
+  --type-title-small-font-size: 14px;
+  --type-title-small-font-weight: 500;
+  --type-title-small-line-height: 20px;
+  --type-title-small-letter-spacing: 0.1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-error: #f0c9a7;
+    --color-error-container: #834815;
+    --color-inverse-on-surface: #2d3836;
+    --color-inverse-primary: #368273;
+    --color-inverse-surface: #e2e8e7;
+    --color-on-error: #57300e;
+    --color-on-error-container: #f2e4d8;
+    --color-on-primary: #1e473f;
+    --color-on-primary-container: #deece9;
+    --color-on-secondary: #483e1d;
+    --color-on-secondary-container: #ede9dd;
+    --color-on-surface: #e2e8e7;
+    --color-on-surface-variant: #c2d5d1;
+    --color-on-tertiary: #4b341a;
+    --color-on-tertiary-container: #eee6dc;
+    --color-outline: #86aba4;
+    --color-outline-variant: #3e5a54;
+    --color-primary: #b7e0d8;
+    --color-primary-container: #2d6b5f;
+    --color-scrim: #000000;
+    --color-secondary: #e1d7b6;
+    --color-secondary-container: #6c5d2c;
+    --color-shadow: #000000;
+    --color-surface: #0d1010;
+    --color-surface-container: #1b2120;
+    --color-surface-container-high: #272f2d;
+    --color-surface-container-highest: #323d3b;
+    --color-surface-container-low: #161c1b;
+    --color-surface-container-lowest: #090a0a;
+    --color-surface-variant: #3e5a54;
+    --color-tertiary: #e4cdb3;
+    --color-tertiary-container: #714e27;
+  }
+}
+
+/* M3 State Layers — hover 8%, focus 12%, pressed 12%, disabled 38% */
+.m3-interactive {
+  position: relative;
+  overflow: hidden;
+}
+.m3-interactive .state-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.m3-interactive:hover .state-layer { opacity: 0.08; }
+.m3-interactive:focus-visible .state-layer { opacity: 0.12; }
+.m3-interactive:active .state-layer { opacity: 0.12; }
+.m3-interactive:disabled .state-layer,
+.m3-interactive[aria-disabled="true"] .state-layer { opacity: 0; }

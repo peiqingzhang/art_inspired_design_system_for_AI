@@ -1,0 +1,200 @@
+/* Design System Theme — Auto-generated from design tokens */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Source+Serif+4:wght@400;500;700&display=swap');
+
+:root {
+  --font-brand: 'Cormorant Garamond', sans-serif;
+  --font-plain: 'Source Serif 4', sans-serif;
+
+  --color-error: #861636;
+  --color-error-container: #f2d8e0;
+  --color-inverse-on-surface: #f1f1f2;
+  --color-inverse-primary: #bec5d9;
+  --color-inverse-surface: #2d3038;
+  --color-on-error: #feffff;
+  --color-on-error-container: #240e14;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #15171d;
+  --color-on-primary-fixed: #15171d;
+  --color-on-primary-fixed-variant: #374261;
+  --color-on-secondary: #fffeff;
+  --color-on-secondary-container: #171b17;
+  --color-on-surface: #16181c;
+  --color-on-surface-variant: #3e455a;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #1b161c;
+  --color-outline: #687496;
+  --color-outline-variant: #c2c7d5;
+  --color-primary: #48557d;
+  --color-primary-container: #e0e3ea;
+  --color-primary-fixed: #e0e3ea;
+  --color-primary-fixed-dim: #bec5d9;
+  --color-scrim: #000000;
+  --color-secondary: #587358;
+  --color-secondary-container: #e3e7e3;
+  --color-shadow: #000000;
+  --color-surface: #f9f9fa;
+  --color-surface-container: #eeeef1;
+  --color-surface-container-high: #e8e9ec;
+  --color-surface-container-highest: #e2e4e8;
+  --color-surface-container-low: #f4f4f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #e0e3ea;
+  --color-tertiary: #705477;
+  --color-tertiary-container: #e7e2e8;
+
+  --radius-extra-large: 32px;
+  --radius-extra-small: 8px;
+  --radius-full: 9999px;
+  --radius-large: 24px;
+  --radius-medium: 16px;
+  --radius-none: 0px;
+  --radius-small: 12px;
+
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-2: 8px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  --type-body-large-font-family: Source Serif 4;
+  --type-body-large-font-size: 16px;
+  --type-body-large-font-weight: 400;
+  --type-body-large-line-height: 24px;
+  --type-body-large-letter-spacing: 0.5px;
+  --type-body-medium-font-family: Source Serif 4;
+  --type-body-medium-font-size: 14px;
+  --type-body-medium-font-weight: 400;
+  --type-body-medium-line-height: 20px;
+  --type-body-medium-letter-spacing: 0.25px;
+  --type-body-small-font-family: Source Serif 4;
+  --type-body-small-font-size: 12px;
+  --type-body-small-font-weight: 400;
+  --type-body-small-line-height: 16px;
+  --type-body-small-letter-spacing: 0.4px;
+  --type-display-large-font-family: Cormorant Garamond;
+  --type-display-large-font-size: 57px;
+  --type-display-large-font-weight: 400;
+  --type-display-large-line-height: 64px;
+  --type-display-large-letter-spacing: -0.25px;
+  --type-display-medium-font-family: Cormorant Garamond;
+  --type-display-medium-font-size: 45px;
+  --type-display-medium-font-weight: 400;
+  --type-display-medium-line-height: 52px;
+  --type-display-medium-letter-spacing: 0px;
+  --type-display-small-font-family: Cormorant Garamond;
+  --type-display-small-font-size: 36px;
+  --type-display-small-font-weight: 400;
+  --type-display-small-line-height: 44px;
+  --type-display-small-letter-spacing: 0px;
+  --type-headline-large-font-family: Cormorant Garamond;
+  --type-headline-large-font-size: 32px;
+  --type-headline-large-font-weight: 400;
+  --type-headline-large-line-height: 40px;
+  --type-headline-large-letter-spacing: 0px;
+  --type-headline-medium-font-family: Cormorant Garamond;
+  --type-headline-medium-font-size: 28px;
+  --type-headline-medium-font-weight: 400;
+  --type-headline-medium-line-height: 36px;
+  --type-headline-medium-letter-spacing: 0px;
+  --type-headline-small-font-family: Cormorant Garamond;
+  --type-headline-small-font-size: 24px;
+  --type-headline-small-font-weight: 400;
+  --type-headline-small-line-height: 32px;
+  --type-headline-small-letter-spacing: 0px;
+  --type-label-large-font-family: Source Serif 4;
+  --type-label-large-font-size: 14px;
+  --type-label-large-font-weight: 500;
+  --type-label-large-line-height: 20px;
+  --type-label-large-letter-spacing: 0.1px;
+  --type-label-medium-font-family: Source Serif 4;
+  --type-label-medium-font-size: 12px;
+  --type-label-medium-font-weight: 500;
+  --type-label-medium-line-height: 16px;
+  --type-label-medium-letter-spacing: 0.5px;
+  --type-label-small-font-family: Source Serif 4;
+  --type-label-small-font-size: 11px;
+  --type-label-small-font-weight: 500;
+  --type-label-small-line-height: 16px;
+  --type-label-small-letter-spacing: 0.5px;
+  --type-title-large-font-family: Cormorant Garamond;
+  --type-title-large-font-size: 22px;
+  --type-title-large-font-weight: 400;
+  --type-title-large-line-height: 28px;
+  --type-title-large-letter-spacing: 0px;
+  --type-title-medium-font-family: Source Serif 4;
+  --type-title-medium-font-size: 16px;
+  --type-title-medium-font-weight: 500;
+  --type-title-medium-line-height: 24px;
+  --type-title-medium-letter-spacing: 0.15px;
+  --type-title-small-font-family: Source Serif 4;
+  --type-title-small-font-size: 14px;
+  --type-title-small-font-weight: 500;
+  --type-title-small-line-height: 20px;
+  --type-title-small-letter-spacing: 0.1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-error: #f0a7bc;
+    --color-error-container: #831535;
+    --color-inverse-on-surface: #2d3038;
+    --color-inverse-primary: #48557d;
+    --color-inverse-surface: #e2e4e8;
+    --color-on-error: #570e23;
+    --color-on-error-container: #f2d8e0;
+    --color-on-primary: #252c40;
+    --color-on-primary-container: #e0e3ea;
+    --color-on-secondary: #2c392c;
+    --color-on-secondary-container: #e3e7e3;
+    --color-on-surface: #e2e4e8;
+    --color-on-surface-variant: #c2c7d5;
+    --color-on-tertiary: #382a3b;
+    --color-on-tertiary-container: #e7e2e8;
+    --color-outline: #868fab;
+    --color-outline-variant: #3e455a;
+    --color-primary: #bec5d9;
+    --color-primary-container: #374261;
+    --color-scrim: #000000;
+    --color-secondary: #c5d2c5;
+    --color-secondary-container: #425642;
+    --color-shadow: #000000;
+    --color-surface: #0d0e10;
+    --color-surface-container: #1b1d21;
+    --color-surface-container-high: #27292f;
+    --color-surface-container-highest: #32353d;
+    --color-surface-container-low: #16181c;
+    --color-surface-container-lowest: #09090a;
+    --color-surface-variant: #3e455a;
+    --color-tertiary: #d1c3d4;
+    --color-tertiary-container: #543f59;
+  }
+}
+
+/* M3 State Layers — hover 8%, focus 12%, pressed 12%, disabled 38% */
+.m3-interactive {
+  position: relative;
+  overflow: hidden;
+}
+.m3-interactive .state-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.m3-interactive:hover .state-layer { opacity: 0.08; }
+.m3-interactive:focus-visible .state-layer { opacity: 0.12; }
+.m3-interactive:active .state-layer { opacity: 0.12; }
+.m3-interactive:disabled .state-layer,
+.m3-interactive[aria-disabled="true"] .state-layer { opacity: 0; }

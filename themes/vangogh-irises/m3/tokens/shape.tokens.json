@@ -1,0 +1,36 @@
+{
+  "shape": {
+    "$description": "Shape tokens \u2014 organic corner style derived from visual mood",
+    "corner": {
+      "none": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "extra-small": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "small": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "medium": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "large": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "extra-large": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "full": {
+        "$value": "9999px",
+        "$type": "dimension",
+        "$description": "Pill shape"
+      }
+    }
+  }
+}

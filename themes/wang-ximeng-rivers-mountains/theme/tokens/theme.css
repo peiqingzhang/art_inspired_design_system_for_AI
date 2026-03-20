@@ -1,0 +1,104 @@
+/* wang-ximeng-rivers-mountains-theme -- generated design tokens as CSS custom properties */
+
+:root {
+  --md-sys-color-primary: #368273;
+  --md-sys-color-on-primary: #fffefe;
+  --md-sys-color-primary-container: #deece9;
+  --md-sys-color-on-primary-container: #131f1d;
+  --md-sys-color-primary-fixed: #deece9;
+  --md-sys-color-primary-fixed-dim: #b7e0d8;
+  --md-sys-color-on-primary-fixed: #131f1d;
+  --md-sys-color-on-primary-fixed-variant: #2d6b5f;
+  --md-sys-color-secondary: #827034;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #ede9dd;
+  --md-sys-color-on-secondary-container: #1f1c13;
+  --md-sys-color-tertiary: #845b2d;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #eee6dc;
+  --md-sys-color-on-tertiary-container: #201912;
+  --md-sys-color-error: #864a16;
+  --md-sys-color-on-error: #feffff;
+  --md-sys-color-error-container: #f2e4d8;
+  --md-sys-color-on-error-container: #24180e;
+  --md-sys-color-surface: #C8C0A0;
+  --md-sys-color-on-surface: #2A3830;
+  --md-sys-color-surface-variant: #deece9;
+  --md-sys-color-on-surface-variant: #5A6858;
+  --md-sys-color-surface-container-lowest: #e0dcc7;
+  --md-sys-color-surface-container-low: #dbd6bf;
+  --md-sys-color-surface-container: #d6d0b7;
+  --md-sys-color-surface-container-high: #d1cbaf;
+  --md-sys-color-surface-container-highest: #ccc5a7;
+  --md-sys-color-outline: #8A9A80;
+  --md-sys-color-outline-variant: #bddad4;
+  --md-sys-color-inverse-surface: #25403b;
+  --md-sys-color-inverse-on-surface: #f0f3f3;
+  --md-sys-color-inverse-primary: #b7e0d8;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-pale-jade: #3f7f64;
+  --md-sys-color-on-pale-jade: #ffffff;
+  --md-sys-color-pale-jade-container: #dfebe6;
+  --md-sys-color-on-pale-jade-container: #141e1a;
+  --md-sys-color-dark-umber: #816238;
+  --md-sys-color-on-dark-umber: #ffffff;
+  --md-sys-color-dark-umber-container: #ece6de;
+  --md-sys-color-on-dark-umber-container: #1f1a13;
+  --md-sys-color-mist-white: #747457;
+  --md-sys-color-on-mist-white: #ffffff;
+  --md-sys-color-mist-white-container: #e8e8e2;
+  --md-sys-color-on-mist-white-container: #1b1b17;
+
+  --md-sys-typescale-brand-font: 'Noto Serif Display';
+  --md-sys-typescale-plain-font: 'Noto Sans';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #b7e0d8;
+    --md-sys-color-on-primary: #1e473f;
+    --md-sys-color-primary-container: #2d6b5f;
+    --md-sys-color-on-primary-container: #deece9;
+    --md-sys-color-secondary: #e1d7b6;
+    --md-sys-color-on-secondary: #483e1d;
+    --md-sys-color-secondary-container: #6c5d2c;
+    --md-sys-color-on-secondary-container: #ede9dd;
+    --md-sys-color-tertiary: #e4cdb3;
+    --md-sys-color-on-tertiary: #4b341a;
+    --md-sys-color-tertiary-container: #714e27;
+    --md-sys-color-on-tertiary-container: #eee6dc;
+    --md-sys-color-error: #f0c9a7;
+    --md-sys-color-on-error: #57300e;
+    --md-sys-color-error-container: #834815;
+    --md-sys-color-on-error-container: #f2e4d8;
+    --md-sys-color-surface: #0A1818;
+    --md-sys-color-on-surface: #D0D0B8;
+    --md-sys-color-surface-variant: #376159;
+    --md-sys-color-on-surface-variant: #C8D8C0;
+    --md-sys-color-surface-container-lowest: #192828;
+    --md-sys-color-surface-container-low: #162525;
+    --md-sys-color-surface-container: #122222;
+    --md-sys-color-surface-container-high: #0f1f1f;
+    --md-sys-color-surface-container-highest: #0c1b1b;
+    --md-sys-color-outline: #2A3A38;
+    --md-sys-color-outline-variant: #376159;
+    --md-sys-color-inverse-surface: #deece9;
+    --md-sys-color-inverse-on-surface: #25403b;
+    --md-sys-color-inverse-primary: #368273;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-pale-jade: #baddce;
+    --md-sys-color-on-pale-jade: #214435;
+    --md-sys-color-pale-jade-container: #326650;
+    --md-sys-color-on-pale-jade-container: #dfebe6;
+    --md-sys-color-dark-umber: #e0ceb7;
+    --md-sys-color-on-dark-umber: #47351e;
+    --md-sys-color-dark-umber-container: #6a502e;
+    --md-sys-color-on-dark-umber-container: #ece6de;
+    --md-sys-color-mist-white: #d3d3c4;
+    --md-sys-color-on-mist-white: #3a3a2b;
+    --md-sys-color-mist-white-container: #575741;
+    --md-sys-color-on-mist-white-container: #e8e8e2;
+  }
+}

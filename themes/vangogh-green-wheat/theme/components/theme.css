@@ -1,0 +1,208 @@
+/* Design System Theme — Auto-generated from design tokens */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Source+Sans+3:wght@400;500;700&display=swap');
+
+:root {
+  --font-brand: 'Lora', sans-serif;
+  --font-plain: 'Source Sans 3', sans-serif;
+
+  --color-error: #863f16;
+  --color-error-container: #f2e2d8;
+  --color-inverse-on-surface: #f0f4f1;
+  --color-inverse-primary: #bfd8c3;
+  --color-inverse-surface: #244129;
+  --color-on-error: #feffff;
+  --color-on-error-container: #24160e;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #151d17;
+  --color-on-primary-fixed: #151d17;
+  --color-on-primary-fixed-variant: #395f40;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #151d1b;
+  --color-on-surface: #2C522F;
+  --color-on-surface-variant: #5A7860;
+  --color-on-tertiary: #fffffe;
+  --color-on-tertiary-container: #15181d;
+  --color-on-wheat-chartreuse: #ffffff;
+  --color-on-wheat-chartreuse-container: #1d2111;
+  --color-outline: #8AAA80;
+  --color-outline-variant: #bddac2;
+  --color-primary: #4a7c53;
+  --color-primary-container: #e1e9e2;
+  --color-primary-fixed: #e1e9e2;
+  --color-primary-fixed-dim: #bfd8c3;
+  --color-scrim: #000000;
+  --color-secondary: #4a7c6f;
+  --color-secondary-container: #e1e9e7;
+  --color-shadow: #000000;
+  --color-surface: #C8DDD0;
+  --color-surface-container: #d6e4d1;
+  --color-surface-container-high: #cfe1ce;
+  --color-surface-container-highest: #cbdfce;
+  --color-surface-container-low: #dde6d4;
+  --color-surface-container-lowest: #e3e8d8;
+  --color-surface-variant: #deece0;
+  --color-tertiary: #495b7d;
+  --color-tertiary-container: #e0e4ea;
+  --color-wheat-chartreuse: #6e842b;
+  --color-wheat-chartreuse-container: #e9eedc;
+
+  --radius-extra-large: 32px;
+  --radius-extra-small: 8px;
+  --radius-full: 9999px;
+  --radius-large: 24px;
+  --radius-medium: 16px;
+  --radius-none: 0px;
+  --radius-small: 12px;
+
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-2: 8px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  --type-body-large-font-family: Source Sans 3;
+  --type-body-large-font-size: 16px;
+  --type-body-large-font-weight: 400;
+  --type-body-large-line-height: 24px;
+  --type-body-large-letter-spacing: 0.5px;
+  --type-body-medium-font-family: Source Sans 3;
+  --type-body-medium-font-size: 14px;
+  --type-body-medium-font-weight: 400;
+  --type-body-medium-line-height: 20px;
+  --type-body-medium-letter-spacing: 0.25px;
+  --type-body-small-font-family: Source Sans 3;
+  --type-body-small-font-size: 12px;
+  --type-body-small-font-weight: 400;
+  --type-body-small-line-height: 16px;
+  --type-body-small-letter-spacing: 0.4px;
+  --type-display-large-font-family: Lora;
+  --type-display-large-font-size: 57px;
+  --type-display-large-font-weight: 400;
+  --type-display-large-line-height: 64px;
+  --type-display-large-letter-spacing: -0.25px;
+  --type-display-medium-font-family: Lora;
+  --type-display-medium-font-size: 45px;
+  --type-display-medium-font-weight: 400;
+  --type-display-medium-line-height: 52px;
+  --type-display-medium-letter-spacing: 0px;
+  --type-display-small-font-family: Lora;
+  --type-display-small-font-size: 36px;
+  --type-display-small-font-weight: 400;
+  --type-display-small-line-height: 44px;
+  --type-display-small-letter-spacing: 0px;
+  --type-headline-large-font-family: Lora;
+  --type-headline-large-font-size: 32px;
+  --type-headline-large-font-weight: 400;
+  --type-headline-large-line-height: 40px;
+  --type-headline-large-letter-spacing: 0px;
+  --type-headline-medium-font-family: Lora;
+  --type-headline-medium-font-size: 28px;
+  --type-headline-medium-font-weight: 400;
+  --type-headline-medium-line-height: 36px;
+  --type-headline-medium-letter-spacing: 0px;
+  --type-headline-small-font-family: Lora;
+  --type-headline-small-font-size: 24px;
+  --type-headline-small-font-weight: 400;
+  --type-headline-small-line-height: 32px;
+  --type-headline-small-letter-spacing: 0px;
+  --type-label-large-font-family: Source Sans 3;
+  --type-label-large-font-size: 14px;
+  --type-label-large-font-weight: 500;
+  --type-label-large-line-height: 20px;
+  --type-label-large-letter-spacing: 0.1px;
+  --type-label-medium-font-family: Source Sans 3;
+  --type-label-medium-font-size: 12px;
+  --type-label-medium-font-weight: 500;
+  --type-label-medium-line-height: 16px;
+  --type-label-medium-letter-spacing: 0.5px;
+  --type-label-small-font-family: Source Sans 3;
+  --type-label-small-font-size: 11px;
+  --type-label-small-font-weight: 500;
+  --type-label-small-line-height: 16px;
+  --type-label-small-letter-spacing: 0.5px;
+  --type-title-large-font-family: Lora;
+  --type-title-large-font-size: 22px;
+  --type-title-large-font-weight: 400;
+  --type-title-large-line-height: 28px;
+  --type-title-large-letter-spacing: 0px;
+  --type-title-medium-font-family: Source Sans 3;
+  --type-title-medium-font-size: 16px;
+  --type-title-medium-font-weight: 500;
+  --type-title-medium-line-height: 24px;
+  --type-title-medium-letter-spacing: 0.15px;
+  --type-title-small-font-family: Source Sans 3;
+  --type-title-small-font-size: 14px;
+  --type-title-small-font-weight: 500;
+  --type-title-small-line-height: 20px;
+  --type-title-small-letter-spacing: 0.1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-error: #f0c2a7;
+    --color-error-container: #833e15;
+    --color-inverse-on-surface: #244129;
+    --color-inverse-primary: #4a7c53;
+    --color-inverse-surface: #deece0;
+    --color-on-error: #57290e;
+    --color-on-error-container: #f2e2d8;
+    --color-on-primary: #263f2a;
+    --color-on-primary-container: #e1e9e2;
+    --color-on-secondary: #263f39;
+    --color-on-secondary-container: #e1e9e7;
+    --color-on-surface: #D0E4D0;
+    --color-on-surface-variant: #7A9A8A;
+    --color-on-tertiary: #252f40;
+    --color-on-tertiary-container: #e0e4ea;
+    --color-on-wheat-chartreuse: #3f4c19;
+    --color-on-wheat-chartreuse-container: #e9eedc;
+    --color-outline: #2A4A3A;
+    --color-outline-variant: #36623e;
+    --color-primary: #bfd8c3;
+    --color-primary-container: #395f40;
+    --color-scrim: #000000;
+    --color-secondary: #bfd8d2;
+    --color-secondary-container: #395f55;
+    --color-shadow: #000000;
+    --color-surface: #0E1E1A;
+    --color-surface-container: #11241e;
+    --color-surface-container-high: #10221d;
+    --color-surface-container-highest: #0f201b;
+    --color-surface-container-low: #122620;
+    --color-surface-container-lowest: #132922;
+    --color-surface-variant: #36623e;
+    --color-tertiary: #bec8d9;
+    --color-tertiary-container: #384660;
+    --color-wheat-chartreuse: #d8e5b2;
+    --color-wheat-chartreuse-container: #5f7325;
+  }
+}
+
+/* M3 State Layers — hover 8%, focus 12%, pressed 12%, disabled 38% */
+.m3-interactive {
+  position: relative;
+  overflow: hidden;
+}
+.m3-interactive .state-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.m3-interactive:hover .state-layer { opacity: 0.08; }
+.m3-interactive:focus-visible .state-layer { opacity: 0.12; }
+.m3-interactive:active .state-layer { opacity: 0.12; }
+.m3-interactive:disabled .state-layer,
+.m3-interactive[aria-disabled="true"] .state-layer { opacity: 0; }

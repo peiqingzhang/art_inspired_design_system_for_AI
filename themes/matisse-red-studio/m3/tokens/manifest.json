@@ -1,0 +1,18 @@
+{
+  "$schema": "https://designtokens.org/schemas/manifest.json",
+  "$description": "Design tokens for matisse-red-studio-m3",
+  "sources": [
+    {
+      "path": "color.tokens.json"
+    },
+    {
+      "path": "typography.tokens.json"
+    },
+    {
+      "path": "shape.tokens.json"
+    },
+    {
+      "path": "spacing.tokens.json"
+    }
+  ]
+}

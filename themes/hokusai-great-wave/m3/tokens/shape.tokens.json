@@ -1,0 +1,36 @@
+{
+  "shape": {
+    "$description": "Shape tokens \u2014 sharp corner style derived from visual mood",
+    "corner": {
+      "none": {
+        "$value": "0px",
+        "$type": "dimension"
+      },
+      "extra-small": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "small": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "medium": {
+        "$value": "6px",
+        "$type": "dimension"
+      },
+      "large": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "extra-large": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "full": {
+        "$value": "9999px",
+        "$type": "dimension",
+        "$description": "Pill shape"
+      }
+    }
+  }
+}

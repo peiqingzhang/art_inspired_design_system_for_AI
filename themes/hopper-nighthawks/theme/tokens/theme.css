@@ -1,0 +1,96 @@
+/* hopper-nighthawks-theme -- generated design tokens as CSS custom properties */
+
+:root {
+  --md-sys-color-primary: #2e8383;
+  --md-sys-color-on-primary: #fffefe;
+  --md-sys-color-primary-container: #dceeee;
+  --md-sys-color-on-primary-container: #122020;
+  --md-sys-color-primary-fixed: #dceeee;
+  --md-sys-color-primary-fixed-dim: #b3e4e4;
+  --md-sys-color-on-primary-fixed: #122020;
+  --md-sys-color-on-primary-fixed-variant: #277171;
+  --md-sys-color-secondary: #862e1f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f0ddda;
+  --md-sys-color-on-secondary-container: #23120f;
+  --md-sys-color-tertiary: #857026;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #efebdb;
+  --md-sys-color-on-tertiary-container: #211e11;
+  --md-sys-color-error: #864d16;
+  --md-sys-color-on-error: #feffff;
+  --md-sys-color-error-container: #f2e5d8;
+  --md-sys-color-on-error-container: #24190e;
+  --md-sys-color-surface: #D8C880;
+  --md-sys-color-on-surface: #2C5252;
+  --md-sys-color-surface-variant: #deecec;
+  --md-sys-color-on-surface-variant: #5A6A5A;
+  --md-sys-color-surface-container-lowest: #e6daa0;
+  --md-sys-color-surface-container-low: #e4d799;
+  --md-sys-color-surface-container: #e1d392;
+  --md-sys-color-surface-container-high: #decf8c;
+  --md-sys-color-surface-container-highest: #dbcb86;
+  --md-sys-color-outline: #8A9A80;
+  --md-sys-color-outline-variant: #bddada;
+  --md-sys-color-inverse-surface: #244141;
+  --md-sys-color-inverse-on-surface: #f0f4f4;
+  --md-sys-color-inverse-primary: #b3e4e4;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-counter-mahogany: #834531;
+  --md-sys-color-on-counter-mahogany: #ffffff;
+  --md-sys-color-counter-mahogany-container: #ede1dd;
+  --md-sys-color-on-counter-mahogany-container: #201512;
+  --md-sys-color-neon-green: #2c8451;
+  --md-sys-color-on-neon-green: #ffffff;
+  --md-sys-color-neon-green-container: #dceee4;
+  --md-sys-color-on-neon-green-container: #112118;
+
+  --md-sys-typescale-brand-font: 'DM Sans';
+  --md-sys-typescale-plain-font: 'IBM Plex Sans';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #b3e4e4;
+    --md-sys-color-on-primary: #1a4b4b;
+    --md-sys-color-primary-container: #277171;
+    --md-sys-color-on-primary-container: #dceeee;
+    --md-sys-color-secondary: #ebb5ac;
+    --md-sys-color-on-secondary: #521c13;
+    --md-sys-color-secondary-container: #7c2b1c;
+    --md-sys-color-on-secondary-container: #f0ddda;
+    --md-sys-color-tertiary: #e8dbaf;
+    --md-sys-color-on-tertiary: #4f4216;
+    --md-sys-color-tertiary-container: #766422;
+    --md-sys-color-on-tertiary-container: #efebdb;
+    --md-sys-color-error: #f0cba7;
+    --md-sys-color-on-error: #57320e;
+    --md-sys-color-error-container: #834b15;
+    --md-sys-color-on-error-container: #f2e5d8;
+    --md-sys-color-surface: #0A1818;
+    --md-sys-color-on-surface: #D8D0A8;
+    --md-sys-color-surface-variant: #366262;
+    --md-sys-color-on-surface-variant: #6A7A70;
+    --md-sys-color-surface-container-lowest: #0f2020;
+    --md-sys-color-surface-container-low: #0d1f1f;
+    --md-sys-color-surface-container: #0c1d1d;
+    --md-sys-color-surface-container-high: #0b1b1b;
+    --md-sys-color-surface-container-highest: #0a1919;
+    --md-sys-color-outline: #2A3A38;
+    --md-sys-color-outline-variant: #366262;
+    --md-sys-color-inverse-surface: #deecec;
+    --md-sys-color-inverse-on-surface: #244141;
+    --md-sys-color-inverse-primary: #2e8383;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-counter-mahogany: #e3c0b4;
+    --md-sys-color-on-counter-mahogany: #4a271b;
+    --md-sys-color-counter-mahogany-container: #6f3a29;
+    --md-sys-color-on-counter-mahogany-container: #ede1dd;
+    --md-sys-color-neon-green: #b2e5c8;
+    --md-sys-color-on-neon-green: #194c2f;
+    --md-sys-color-neon-green-container: #267247;
+    --md-sys-color-on-neon-green-container: #dceee4;
+  }
+}

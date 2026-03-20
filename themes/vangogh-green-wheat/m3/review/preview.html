@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Van Gogh — Green Wheat Fields, Auvers (1890) (M3) — M3 Design System Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Source+Serif+4:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<style>
+  :root {
+    --font-brand: 'Playfair Display', sans-serif;
+    --font-plain: 'Source Serif 4', sans-serif;
+    --color-error: #863916;
+    --color-error-container: #f2e0d8;
+    --color-inverse-on-surface: #f1f2f1;
+    --color-inverse-primary: #bde2b5;
+    --color-inverse-surface: #2f382d;
+    --color-on-error: #feffff;
+    --color-on-error-container: #24150e;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #152012;
+    --color-on-primary-fixed: #152012;
+    --color-on-primary-fixed-variant: #376e2a;
+    --color-on-secondary: #ffffff;
+    --color-on-secondary-container: #14191e;
+    --color-on-surface: #171c16;
+    --color-on-surface-variant: #435a3e;
+    --color-on-tertiary: #ffffff;
+    --color-on-tertiary-container: #1f1f13;
+    --color-outline: #709668;
+    --color-outline-variant: #c6d5c2;
+    --color-primary: #418233;
+    --color-primary-container: #e0eddd;
+    --color-primary-fixed: #e0eddd;
+    --color-primary-fixed-dim: #bde2b5;
+    --color-scrim: #000000;
+    --color-secondary: #44647e;
+    --color-secondary-container: #e0e5ea;
+    --color-shadow: #000000;
+    --color-surface: #f9faf9;
+    --color-surface-container: #eef1ee;
+    --color-surface-container-high: #e9ece8;
+    --color-surface-container-highest: #e3e8e2;
+    --color-surface-container-low: #f4f5f4;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-variant: #e2eae0;
+    --color-tertiary: #818139;
+    --color-tertiary-container: #ececde;
+    --radius-extra-large: 32px;
+    --radius-extra-small: 8px;
+    --radius-full: 9999px;
+    --radius-large: 24px;
+    --radius-medium: 16px;
+    --radius-none: 0px;
+    --radius-small: 12px;
+    --spacing-0: 0px;
+    --spacing-1: 4px;
+    --spacing-10: 40px;
+    --spacing-12: 48px;
+    --spacing-16: 64px;
+    --spacing-2: 8px;
+    --spacing-20: 80px;
+    --spacing-24: 96px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-5: 20px;
+    --spacing-6: 24px;
+    --spacing-8: 32px;
+  }
+  [data-theme="dark"] {
+    --color-error: #f0bea7;
+    --color-error-container: #833815;
+    --color-inverse-on-surface: #2f382d;
+    --color-inverse-primary: #418233;
+    --color-inverse-surface: #e3e8e2;
+    --color-on-error: #57250e;
+    --color-on-error-container: #f2e0d8;
+    --color-on-primary: #24491c;
+    --color-on-primary-container: #e0eddd;
+    --color-on-secondary: #233442;
+    --color-on-secondary-container: #e0e5ea;
+    --color-on-surface: #e3e8e2;
+    --color-on-surface-variant: #c6d5c2;
+    --color-on-tertiary: #46461f;
+    --color-on-tertiary-container: #ececde;
+    --color-outline: #8dab86;
+    --color-outline-variant: #435a3e;
+    --color-primary: #bde2b5;
+    --color-primary-container: #376e2a;
+    --color-scrim: #000000;
+    --color-secondary: #bccddb;
+    --color-secondary-container: #354e63;
+    --color-shadow: #000000;
+    --color-surface: #0e100d;
+    --color-surface-container: #1c211b;
+    --color-surface-container-high: #282f27;
+    --color-surface-container-highest: #343d32;
+    --color-surface-container-low: #171c16;
+    --color-surface-container-lowest: #090a09;
+    --color-surface-variant: #435a3e;
+    --color-tertiary: #dfdfb8;
+    --color-tertiary-container: #6a6a2e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-plain); background: var(--color-surface); color: var(--color-on-surface); padding: 32px; transition: background-color 0.3s, color 0.3s; }
+  .material-symbols-outlined { font-family: 'Material Symbols Outlined'; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-smoothing: antialiased; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+  .preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1200px; margin: 0 auto; }
+  .section { background: var(--color-surface-container-low); border-radius: var(--radius-medium); padding: 24px; }
+  .section h2 { font-family: var(--font-brand); font-size: 22px; margin-bottom: 16px; color: var(--color-on-surface); }
+  .component-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+  .section-label { font-size: 12px; color: var(--color-on-surface-variant); margin-bottom: 8px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+  .m3-interactive { position: relative; overflow: hidden; cursor: pointer; }
+  .m3-interactive::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: currentColor; opacity: 0; transition: opacity 0.2s ease; }
+  .m3-interactive:hover::after { opacity: 0.08; }
+  .m3-interactive:focus-visible::after { opacity: 0.12; }
+  .m3-interactive:active::after { opacity: 0.12; }
+  .m3-interactive:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+  .m3-interactive[disabled]::after, .m3-interactive[aria-disabled="true"]::after { opacity: 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--spacing-2); height: 40px; padding: 0 24px; border: none; cursor: pointer; font-family: var(--font-plain); font-size: 14px; font-weight: 500; letter-spacing: 0.1px; line-height: 20px; border-radius: var(--radius-full); transition: box-shadow 0.2s ease; }
+  .btn-filled { background: var(--color-primary); color: var(--color-on-primary); }
+  .btn-filled:hover { box-shadow: 0 1px 3px 1px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.3); }
+  .btn-outlined { background: transparent; color: var(--color-primary); border: 1px solid var(--color-outline); }
+  .btn-tonal { background: var(--color-secondary-container); color: var(--color-on-secondary-container); }
+  .btn-tonal:hover { box-shadow: 0 1px 3px 1px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.3); }
+  .btn-text { background: transparent; color: var(--color-primary); padding: 0 12px; }
+  .btn[disabled] { opacity: 0.38; pointer-events: none; cursor: default; box-shadow: none; }
+  .card { border-radius: var(--radius-medium); padding: 16px; color: var(--color-on-surface); }
+  .card-elevated { background: var(--color-surface-container-low); box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15); }
+  .card-filled { background: var(--color-surface-container-highest); }
+  .card-outlined { background: var(--color-surface); border: 1px solid var(--color-outline-variant); }
+  .card h3 { font-family: var(--font-brand); font-size: 22px; line-height: 28px; margin-bottom: 8px; }
+  .card p { font-size: 14px; color: var(--color-on-surface-variant); line-height: 20px; }
+  .card-actions { display: flex; gap: var(--spacing-2); margin-top: var(--spacing-4); justify-content: flex-end; }
+  .chip { display: inline-flex; align-items: center; height: 32px; padding: 0 16px; gap: var(--spacing-2); border-radius: var(--radius-small); font-size: 14px; font-weight: 500; cursor: pointer; user-select: none; transition: background-color 0.15s, color 0.15s; }
+  .chip-unselected { border: 1px solid var(--color-outline); background: transparent; color: var(--color-on-surface); }
+  .chip-selected { border: 1px solid transparent; background: var(--color-secondary-container); color: var(--color-on-secondary-container); }
+  .input-outlined-wrap { border: 1px solid var(--color-outline); border-radius: var(--radius-extra-small); padding: 8px var(--spacing-4); position: relative; min-height: 56px; display: flex; flex-direction: column; justify-content: flex-end; transition: border-color 0.15s; }
+  .input-outlined-wrap:focus-within { border: 2px solid var(--color-primary); padding: 7px calc(var(--spacing-4) - 1px); }
+  .input-outlined-wrap.input-error { border-color: var(--color-error); }
+  .input-filled-wrap { background: var(--color-surface-container-highest); border-radius: var(--radius-extra-small) var(--radius-extra-small) 0 0; border-bottom: 1px solid var(--color-on-surface-variant); padding: 8px var(--spacing-4); position: relative; min-height: 56px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .input-filled-wrap:focus-within { border-bottom: 2px solid var(--color-primary); }
+  .input-label-float { position: absolute; top: 18px; left: var(--spacing-4); font-size: 16px; color: var(--color-on-surface-variant); transition: all 0.15s ease; pointer-events: none; }
+  .input-field:focus ~ .input-label-float, .input-field:not(:placeholder-shown) ~ .input-label-float { top: 8px; font-size: 12px; }
+  .input-outlined-wrap:focus-within .input-label-float { color: var(--color-primary); }
+  .input-error .input-label-float { color: var(--color-error) !important; }
+  .input-field { border: none; outline: none; background: transparent; font-size: 16px; font-family: var(--font-plain); color: var(--color-on-surface); width: 100%; padding: 0; margin-top: 12px; }
+  .input-supporting { font-size: 12px; margin: 4px var(--spacing-4) 0; color: var(--color-on-surface-variant); }
+  .input-supporting.input-error-text { color: var(--color-error); }
+  .avatar { width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 500; font-size: 16px; background: var(--color-primary-container); color: var(--color-on-primary-container); flex-shrink: 0; }
+  .avatar-sm { width: 24px; height: 24px; font-size: 11px; }
+  .avatar-lg { width: 56px; height: 56px; font-size: 22px; }
+  .badge-wrap { position: relative; display: inline-flex; }
+  .badge-dot { position: absolute; top: -2px; right: -2px; width: 6px; height: 6px; border-radius: 50%; background: var(--color-error); }
+  .badge-count { position: absolute; top: -4px; right: -8px; min-width: 16px; height: 16px; border-radius: 8px; background: var(--color-error); color: var(--color-on-error); font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; padding: 0 4px; }
+  .color-group { display: flex; flex-direction: column; gap: 2px; }
+  .color-group-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-on-surface-variant); margin-bottom: 4px; }
+  .color-pair { border-radius: var(--radius-small); overflow: hidden; }
+  .color-pair-main { padding: 14px 12px 6px; font-size: 12px; font-weight: 500; }
+  .color-pair-on { padding: 6px 12px 10px; font-size: 10px; }
+  .surface-ramp { display: flex; border-radius: var(--radius-small); overflow: hidden; height: 48px; }
+  .surface-ramp-step { flex: 1; display: flex; align-items: flex-end; justify-content: center; padding: 4px 2px; font-size: 8px; font-weight: 500; }
+  .type-row { display: flex; align-items: baseline; gap: 16px; padding: 6px 0; border-bottom: 1px solid var(--color-outline-variant); }
+  .type-row:last-child { border-bottom: none; }
+  .type-meta { min-width: 130px; font-size: 11px; color: var(--color-on-surface-variant); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; }
+  .type-sample { flex: 1; min-width: 0; }
+  .sidebar-item { display: flex; align-items: center; gap: 12px; padding: 0 24px 0 16px; height: 56px; border-radius: var(--radius-full); border: none; width: 100%; font-family: var(--font-plain); font-size: 14px; font-weight: 500; text-align: left; background: transparent; color: var(--color-on-surface-variant); transition: background-color 0.15s, color 0.15s; }
+  .sidebar-item[aria-selected="true"] { background: var(--color-secondary-container); color: var(--color-on-secondary-container); font-weight: 700; }
+  .tab-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--spacing-1); height: 48px; padding: 0 var(--spacing-4); border: none; cursor: pointer; background: transparent; font-family: var(--font-plain); font-size: 14px; font-weight: 500; letter-spacing: 0.1px; color: var(--color-on-surface-variant); border-bottom: 3px solid transparent; transition: color 0.15s, border-color 0.15s; }
+  .tab-btn[aria-selected="true"] { color: var(--color-on-surface); border-bottom-color: var(--color-primary); }
+  .bnav-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--spacing-1); border: none; cursor: pointer; background: transparent; font-family: var(--font-plain); font-size: 12px; font-weight: 500; color: var(--color-on-surface-variant); letter-spacing: 0.5px; }
+  .bnav-item[aria-selected="true"] { color: var(--color-on-surface); font-weight: 700; }
+  .bnav-pill { width: 64px; height: 32px; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+  .bnav-item[aria-selected="true"] .bnav-pill { background: var(--color-secondary-container); color: var(--color-on-secondary-container); }
+  .data-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .data-table th { padding: 12px 16px; text-align: left; font-size: 12px; font-weight: 500; color: var(--color-on-surface-variant); border-bottom: 1px solid var(--color-outline-variant); }
+  .data-table td { padding: 12px 16px; }
+  .data-table tbody tr { border-bottom: 1px solid var(--color-outline-variant); transition: background-color 0.15s; }
+  .data-table tbody tr:hover { background-color: var(--color-surface-container); }
+  .list-item { display: flex; align-items: center; gap: var(--spacing-4); padding: var(--spacing-2) var(--spacing-4); min-height: 72px; transition: background-color 0.15s; }
+  .list-item:hover { background-color: var(--color-surface-container); }
+  .dialog-scrim { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.32); z-index: 200; align-items: center; justify-content: center; }
+  .dialog-scrim.open { display: flex; }
+  .dialog-surface { background: var(--color-surface-container-high); border-radius: var(--radius-extra-large); padding: var(--spacing-6); max-width: 560px; width: 90%; box-shadow: 0 8px 32px rgba(0,0,0,0.24); animation: dialog-enter 0.2s ease; }
+  @keyframes dialog-enter { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+  .snackbar { display: flex; align-items: center; gap: var(--spacing-2); padding: var(--spacing-3) var(--spacing-4); background: var(--color-inverse-surface); color: var(--color-inverse-on-surface); border-radius: var(--radius-extra-small); font-size: 14px; line-height: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: opacity 0.3s, transform 0.3s; }
+  .snackbar.hidden { opacity: 0; transform: translateY(16px); pointer-events: none; }
+  .tooltip-wrap { position: relative; display: inline-flex; }
+  .tooltip-bubble { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 8px; padding: 4px var(--spacing-2); background: var(--color-inverse-surface); color: var(--color-inverse-on-surface); border-radius: var(--radius-extra-small); font-size: 12px; font-weight: 500; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.15s; }
+  .tooltip-wrap:hover .tooltip-bubble, .tooltip-wrap:focus-within .tooltip-bubble { opacity: 1; }
+  .progress-track { width: 100%; height: 4px; background: var(--color-surface-container-highest); border-radius: var(--radius-full); overflow: hidden; }
+  .progress-bar { height: 100%; background: var(--color-primary); border-radius: var(--radius-full); transition: width 0.4s ease; }
+  @keyframes indeterminate { 0% { left: -30%; } 100% { left: 100%; } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes skeleton-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .skeleton { background: var(--color-surface-container-highest); animation: skeleton-pulse 1.5s ease-in-out infinite; }
+  .shape-sample { width: 64px; height: 64px; background: var(--color-primary-container); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; color: var(--color-on-primary-container); }
+  .spacing-bar { background: var(--color-primary); border-radius: 2px; height: 16px; }
+  .spacing-row { display: flex; align-items: center; gap: 12px; }
+  .spacing-label { font-size: 11px; color: var(--color-on-surface-variant); min-width: 70px; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .theme-toggle { position: fixed; top: 16px; right: 16px; z-index: 100; }
+  .header { text-align: center; margin-bottom: 48px; }
+  .header h1 { font-family: var(--font-brand); font-size: 45px; line-height: 52px; margin-bottom: 8px; }
+  .header p { font-size: 16px; color: var(--color-on-surface-variant); }
+</style>
+</head>
+<body>
+<button class="btn btn-outlined m3-interactive theme-toggle" onclick="toggleTheme(this)"><span class="material-symbols-outlined" style="font-size:18px;">dark_mode</span> Dark</button>
+<div class="header"><h1>Van Gogh — Green Wheat Fields, Auvers (1890) (M3)</h1><p>M3 design system &middot; 25 components &middot; Light &amp; Dark</p></div>
+<div class="preview-grid">
+
+  <div class="section" style="grid-column:1/-1;">
+    <h2>M3 Color Roles</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+      <div class="color-group"><div class="color-group-label">Primary</div><div class="color-pair"><div class="color-pair-main" style="background:var(--color-primary);color:var(--color-on-primary);">Primary</div><div class="color-pair-on" style="background:var(--color-on-primary);color:var(--color-primary);">On Primary</div></div><div class="color-pair" style="margin-top:4px;"><div class="color-pair-main" style="background:var(--color-primary-container);color:var(--color-on-primary-container);">Container</div><div class="color-pair-on" style="background:var(--color-on-primary-container);color:var(--color-primary-container);">On Container</div></div></div>
+      <div class="color-group"><div class="color-group-label">Secondary</div><div class="color-pair"><div class="color-pair-main" style="background:var(--color-secondary);color:var(--color-on-secondary);">Secondary</div><div class="color-pair-on" style="background:var(--color-on-secondary);color:var(--color-secondary);">On Secondary</div></div><div class="color-pair" style="margin-top:4px;"><div class="color-pair-main" style="background:var(--color-secondary-container);color:var(--color-on-secondary-container);">Container</div><div class="color-pair-on" style="background:var(--color-on-secondary-container);color:var(--color-secondary-container);">On Container</div></div></div>
+      <div class="color-group"><div class="color-group-label">Tertiary</div><div class="color-pair"><div class="color-pair-main" style="background:var(--color-tertiary);color:var(--color-on-tertiary);">Tertiary</div><div class="color-pair-on" style="background:var(--color-on-tertiary);color:var(--color-tertiary);">On Tertiary</div></div><div class="color-pair" style="margin-top:4px;"><div class="color-pair-main" style="background:var(--color-tertiary-container);color:var(--color-on-tertiary-container);">Container</div><div class="color-pair-on" style="background:var(--color-on-tertiary-container);color:var(--color-tertiary-container);">On Container</div></div></div>
+      <div class="color-group"><div class="color-group-label">Error</div><div class="color-pair"><div class="color-pair-main" style="background:var(--color-error);color:var(--color-on-error);">Error</div><div class="color-pair-on" style="background:var(--color-on-error);color:var(--color-error);">On Error</div></div><div class="color-pair" style="margin-top:4px;"><div class="color-pair-main" style="background:var(--color-error-container);color:var(--color-on-error-container);">Container</div><div class="color-pair-on" style="background:var(--color-on-error-container);color:var(--color-error-container);">On Container</div></div></div>
+    </div>
+    <div class="color-group-label" style="margin-top:20px;">Surface Hierarchy</div>
+    <div class="surface-ramp" style="margin-top:6px;"><div class="surface-ramp-step" style="background:var(--color-surface-container-lowest);color:var(--color-on-surface);">Lowest</div><div class="surface-ramp-step" style="background:var(--color-surface-container-low);color:var(--color-on-surface);">Low</div><div class="surface-ramp-step" style="background:var(--color-surface-container);color:var(--color-on-surface);">Base</div><div class="surface-ramp-step" style="background:var(--color-surface-container-high);color:var(--color-on-surface);">High</div><div class="surface-ramp-step" style="background:var(--color-surface-container-highest);color:var(--color-on-surface);">Highest</div><div class="surface-ramp-step" style="background:var(--color-surface);color:var(--color-on-surface);font-weight:700;">Surface</div></div>
+    <div style="display:flex;gap:4px;margin-top:8px;"><div style="flex:1;padding:8px;border-radius:var(--radius-extra-small);background:var(--color-on-surface);color:var(--color-surface);font-size:10px;text-align:center;">On Surface</div><div style="flex:1;padding:8px;border-radius:var(--radius-extra-small);background:var(--color-on-surface-variant);color:var(--color-surface);font-size:10px;text-align:center;">On Srf Var</div><div style="flex:1;padding:8px;border-radius:var(--radius-extra-small);background:var(--color-outline);color:white;font-size:10px;text-align:center;">Outline</div><div style="flex:1;padding:8px;border-radius:var(--radius-extra-small);border:1px solid var(--color-outline-variant);color:var(--color-on-surface);font-size:10px;text-align:center;">Outline Var</div></div>
+  </div>
+
+  <div class="section">
+    <h2>Typography</h2>
+    <div style="display:flex;flex-direction:column;">
+      <div class="type-row"><div class="type-meta">Display L<br>57/64</div><div class="type-sample" style="font-family:var(--font-brand);font-size:57px;line-height:64px;letter-spacing:-0.25px;">Aa</div></div>
+      <div class="type-row"><div class="type-meta">Headline L<br>32/40</div><div class="type-sample" style="font-family:var(--font-brand);font-size:32px;line-height:40px;">Headline</div></div>
+      <div class="type-row"><div class="type-meta">Title L<br>22/28</div><div class="type-sample" style="font-family:var(--font-brand);font-size:22px;line-height:28px;">Title Large</div></div>
+      <div class="type-row"><div class="type-meta">Body L<br>16/24</div><div class="type-sample" style="font-family:var(--font-plain);font-size:16px;line-height:24px;letter-spacing:0.5px;color:var(--color-on-surface-variant);">The quick brown fox jumps over the lazy dog.</div></div>
+      <div class="type-row"><div class="type-meta">Body S<br>12/16</div><div class="type-sample" style="font-family:var(--font-plain);font-size:12px;line-height:16px;letter-spacing:0.4px;color:var(--color-on-surface-variant);">Captions and metadata.</div></div>
+      <div class="type-row"><div class="type-meta">Label L<br>14/20 M500</div><div class="type-sample" style="font-family:var(--font-plain);font-size:14px;line-height:20px;font-weight:500;letter-spacing:0.1px;">Button Labels &amp; Navigation</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Shape</div><div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;"><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-extra-large);">EX</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">extra-large 32px</div></div><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-extra-small);">EX</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">extra-small 8px</div></div><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-full);">FU</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">full 9999px</div></div><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-large);">LA</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">large 24px</div></div><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-medium);">ME</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">medium 16px</div></div><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-none);">NO</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">none 0px</div></div><div style="text-align:center;"><div class="shape-sample" style="border-radius:var(--radius-small);">SM</div><div style="font-size:10px;color:var(--color-on-surface-variant);margin-top:4px;">small 12px</div></div></div>
+    <div class="section-label">Spacing</div><div style="display:flex;flex-direction:column;gap:3px;"><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">1 &middot; 4px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:4px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">2 &middot; 8px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:8px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">3 &middot; 12px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:12px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">4 &middot; 16px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:16px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">5 &middot; 20px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:20px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">6 &middot; 24px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:24px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">8 &middot; 32px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:32px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">10 &middot; 40px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:40px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">12 &middot; 48px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:48px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">16 &middot; 64px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:64px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">20 &middot; 80px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:80px;"></div></div><div style="display:flex;align-items:center;gap:8px;"><div style="font-size:10px;color:var(--color-on-surface-variant);min-width:50px;font-variant-numeric:tabular-nums;">24 &middot; 96px</div><div style="background:var(--color-primary);border-radius:2px;height:12px;width:96px;"></div></div></div>
+  </div>
+
+  <div class="section">
+    <h2>Buttons</h2>
+    <div class="section-label">Primary</div>
+    <div class="component-row">
+      <button class="btn btn-filled m3-interactive"><span class="material-symbols-outlined" style="font-size:18px;">add</span> Filled</button>
+      <button class="btn btn-outlined m3-interactive">Outlined</button>
+      <button class="btn btn-text m3-interactive">Text</button>
+    </div>
+    <div class="section-label">Secondary</div>
+    <div class="component-row">
+      <button class="btn m3-interactive" style="background:var(--color-secondary);color:var(--color-on-secondary);"><span class="material-symbols-outlined" style="font-size:18px;">eco</span> Filled</button>
+      <button class="btn m3-interactive" style="background:transparent;color:var(--color-secondary);border:1px solid var(--color-secondary);">Outlined</button>
+      <button class="btn btn-tonal m3-interactive">Tonal</button>
+    </div>
+    <div class="section-label">Tertiary</div>
+    <div class="component-row">
+      <button class="btn m3-interactive" style="background:var(--color-tertiary);color:var(--color-on-tertiary);"><span class="material-symbols-outlined" style="font-size:18px;">palette</span> Filled</button>
+      <button class="btn m3-interactive" style="background:transparent;color:var(--color-tertiary);border:1px solid var(--color-tertiary);">Outlined</button>
+      <button class="btn m3-interactive" style="background:var(--color-tertiary-container);color:var(--color-on-tertiary-container);">Tonal</button>
+    </div>
+    <div class="section-label">States</div>
+    <div class="component-row">
+      <button class="btn btn-filled m3-interactive">Enabled</button>
+      <button class="btn btn-filled" disabled>Disabled</button>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Cards</h2>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div class="card card-elevated m3-interactive" ><h3>Elevated Card</h3><p>Surface-container-low with M3 level 1 shadow.</p><div class="card-actions"><button class="btn btn-text m3-interactive">Learn More</button><button class="btn btn-filled m3-interactive">Action</button></div></div>
+      <div class="card card-filled m3-interactive"><h3>Filled Card</h3><p>Surface-container-highest for a contained feel.</p></div>
+      <div class="card card-outlined m3-interactive"><h3>Outlined Card</h3><p>Surface with outline-variant border.</p></div>
+    </div>
+  </div>
+  <div class="section" style="grid-column:1/-1;">
+    <h2>Text Inputs</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div><div class="section-label">Outlined</div><div class="input-outlined-wrap"><input class="input-field" placeholder=" " id="i-o1" /><label class="input-label-float" for="i-o1">Label</label></div><div class="input-supporting">Supporting text</div></div>
+      <div><div class="section-label">Filled</div><div class="input-filled-wrap"><input class="input-field" placeholder=" " id="i-f1" /><label class="input-label-float" for="i-f1">Label</label></div><div class="input-supporting">Supporting text</div></div>
+      <div><div class="section-label">With value</div><div class="input-outlined-wrap"><input class="input-field" placeholder=" " value="user@example.com" id="i-o2" /><label class="input-label-float" for="i-o2">Email</label></div></div>
+      <div><div class="section-label">Error</div><div class="input-outlined-wrap input-error"><input class="input-field" placeholder=" " value="bad" id="i-e1" aria-invalid="true" aria-describedby="i-e1-h" /><label class="input-label-float" for="i-e1">Email</label></div><div class="input-supporting input-error-text" id="i-e1-h"><span class="material-symbols-outlined" style="font-size:14px;vertical-align:-2px;">error</span> Invalid email</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Chips</h2>
+    <div class="section-label">Click to toggle</div>
+    <div class="component-row">
+      <div class="chip chip-unselected m3-interactive" role="option" aria-selected="false" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleChip(this);}"><span class="material-symbols-outlined" style="font-size:18px;">palette</span> Category A</div>
+      <div class="chip chip-selected m3-interactive" role="option" aria-selected="true" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleChip(this);}" style="background:var(--color-secondary-container);color:var(--color-on-secondary-container);border-color:transparent;"><span class="material-symbols-outlined" style="font-size:18px;">check</span> Category B</div>
+      <div class="chip chip-unselected m3-interactive" role="option" aria-selected="false" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleChip(this);}"><span class="material-symbols-outlined" style="font-size:18px;">brush</span> Category C</div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Avatar &amp; Badge &amp; Tooltip</h2>
+    <div class="component-row">
+      <div class="avatar avatar-sm">A</div> <div class="avatar">VG</div> <div class="avatar avatar-lg" style="background:var(--color-secondary-container);color:var(--color-on-secondary-container);">CM</div> <div class="avatar" style="background:var(--color-tertiary-container);color:var(--color-on-tertiary-container);">DK</div> <div class="badge-wrap"><div class="avatar">EF</div><span class="badge-dot" style="background:var(--color-error);"></span></div> <div class="badge-wrap"><div class="avatar">GH</div><span class="badge-count" style="background:var(--color-error);color:var(--color-on-error);">3</span></div> <div class="tooltip-wrap" tabindex="0"><div class="avatar" style="background:var(--color-tertiary-container);color:var(--color-on-tertiary-container);"><span class="material-symbols-outlined" style="font-size:20px;">info</span></div><div class="tooltip-bubble">Hover or focus for tooltip</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Divider</h2>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <p style="font-size:14px;color:var(--color-on-surface-variant);">Content above</p>
+      <hr style="border:none;height:1px;background:var(--color-outline-variant);">
+      <p style="font-size:14px;color:var(--color-on-surface-variant);">Content below</p>
+      <hr style="border:none;height:1px;background:var(--color-outline-variant);margin-left:var(--spacing-4);">
+      <p style="font-size:14px;color:var(--color-on-surface-variant);">Inset divider (16px)</p>
+    </div>
+  </div>
+  <div class="section" style="grid-column:1/-1;">
+    <h2>App Bar</h2>
+    <div style="border-radius:var(--radius-medium);overflow:hidden;border:1px solid var(--color-outline-variant);">
+      <div style="display:flex;align-items:center;height:64px;padding:0 var(--spacing-4);gap:var(--spacing-2);background:var(--color-surface);">
+        <button class="m3-interactive" style="border:none;background:none;cursor:pointer;padding:8px;border-radius:var(--radius-full);color:var(--color-on-surface-variant);display:flex;"><span class="material-symbols-outlined">menu</span></button>
+        <span style="flex:1;font-family:var(--font-brand);font-size:22px;line-height:28px;">Page Title</span>
+        <button class="m3-interactive" style="border:none;background:none;cursor:pointer;padding:8px;border-radius:var(--radius-full);color:var(--color-on-surface-variant);display:flex;"><span class="material-symbols-outlined">search</span></button>
+        <button class="m3-interactive" style="border:none;background:none;cursor:pointer;padding:8px;border-radius:var(--radius-full);color:var(--color-on-surface-variant);display:flex;"><span class="material-symbols-outlined">more_vert</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="grid-column:1/-1;">
+    <h2>Tabs</h2>
+    <div class="section-label">Click to switch</div>
+    <div style="display:flex;background:var(--color-surface-container);border-radius:var(--radius-medium);overflow:hidden;" role="tablist">
+      <button class="tab-btn m3-interactive" role="tab" aria-selected="true" onclick="selectTab(this)"><span class="material-symbols-outlined" style="font-size:20px;">palette</span> Gallery</button>
+      <button class="tab-btn m3-interactive" role="tab" aria-selected="false" onclick="selectTab(this)"><span class="material-symbols-outlined" style="font-size:20px;">brush</span> Studio</button>
+      <button class="tab-btn m3-interactive" role="tab" aria-selected="false" onclick="selectTab(this)"><span class="material-symbols-outlined" style="font-size:20px;">sell</span> Auction</button>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Sidebar</h2>
+    <nav style="background:var(--color-surface-container);border-radius:var(--radius-medium);padding:var(--spacing-3);display:flex;flex-direction:column;gap:var(--spacing-1);max-width:280px;">
+      <button class="sidebar-item m3-interactive" aria-selected="true" onclick="selectSidebar(this)" ><span class="material-symbols-outlined">dashboard</span> Dashboard</button>
+      <button class="sidebar-item m3-interactive" aria-selected="false" onclick="selectSidebar(this)"><span class="material-symbols-outlined">folder</span> Projects</button>
+      <button class="sidebar-item m3-interactive" aria-selected="false" onclick="selectSidebar(this)"><span class="material-symbols-outlined">settings</span> Settings</button>
+    </nav>
+  </div>
+  <div class="section">
+    <h2>Breadcrumb</h2>
+    <nav aria-label="Breadcrumb">
+      <ol style="display:flex;align-items:center;gap:var(--spacing-2);list-style:none;font-size:14px;">
+        <li><a href="#" style="color:var(--color-primary);text-decoration:none;font-weight:500;" onclick="event.preventDefault();">Home</a></li>
+        <li style="color:var(--color-on-surface-variant);">/</li>
+        <li><a href="#" style="color:var(--color-primary);text-decoration:none;font-weight:500;" onclick="event.preventDefault();">Gallery</a></li>
+        <li style="color:var(--color-on-surface-variant);">/</li>
+        <li><span style="color:var(--color-on-surface);font-weight:500;" aria-current="page">Current Page</span></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="section" style="grid-column:1/-1;">
+    <h2>Bottom Navigation</h2>
+    <div style="display:flex;background:var(--color-surface-container);border-radius:var(--radius-medium);height:80px;overflow:hidden;">
+      <button class="bnav-item m3-interactive" aria-selected="true" onclick="selectBnav(this)"><div class="bnav-pill"><span class="material-symbols-outlined">home</span></div><span>Home</span></button>
+      <button class="bnav-item m3-interactive" aria-selected="false" onclick="selectBnav(this)"><div class="bnav-pill"><span class="material-symbols-outlined">search</span></div><span>Search</span></button>
+      <button class="bnav-item m3-interactive" aria-selected="false" onclick="selectBnav(this)"><div class="bnav-pill"><span class="material-symbols-outlined">favorite</span></div><span>Favorites</span></button>
+      <button class="bnav-item m3-interactive" aria-selected="false" onclick="selectBnav(this)"><div class="bnav-pill"><span class="material-symbols-outlined">settings</span></div><span>Settings</span></button>
+    </div>
+  </div>
+  <div class="section" style="grid-column:1/-1;">
+    <h2>Table</h2>
+    <div style="border-radius:var(--radius-medium);overflow:hidden;border:1px solid var(--color-outline-variant);">
+      <table class="data-table"><thead><tr style="background:var(--color-surface-container);"><th>Name</th><th>Category</th><th style="text-align:right;">Value</th></tr></thead>
+      <tbody><tr><td>Item Alpha</td><td><span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:var(--color-primary);"></span> Primary</span></td><td style="text-align:right;">$1,234</td></tr><tr><td>Item Beta</td><td><span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:var(--color-secondary);"></span> Secondary</span></td><td style="text-align:right;">$5,678</td></tr><tr><td>Item Gamma</td><td><span style="display:inline-flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:50%;background:var(--color-tertiary);"></span> Tertiary</span></td><td style="text-align:right;">$9,012</td></tr></tbody></table>
+    </div>
+  </div>
+  <div class="section">
+    <h2>List</h2>
+    <div style="border-radius:var(--radius-medium);overflow:hidden;">
+      <div class="list-item" style="cursor:pointer;"><div class="avatar">AB</div><div style="flex:1;min-width:0;"><div style="font-size:16px;">Primary Text</div><div style="font-size:14px;color:var(--color-on-surface-variant);">Secondary text</div></div><span class="material-symbols-outlined" style="color:var(--color-on-surface-variant);">chevron_right</span></div>
+      <hr style="border:none;height:1px;background:var(--color-outline-variant);margin:0 var(--spacing-4);">
+      <div class="list-item" style="cursor:pointer;"><div class="avatar" style="background:var(--color-secondary-container);color:var(--color-on-secondary-container);">CD</div><div style="flex:1;min-width:0;"><div style="font-size:16px;">Another Item</div><div style="font-size:14px;color:var(--color-on-surface-variant);">Description</div></div><span class="material-symbols-outlined" style="color:var(--color-on-surface-variant);">chevron_right</span></div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Data Card &amp; Stat</h2>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="background:var(--color-surface-container-low);border-radius:var(--radius-medium);padding:var(--spacing-4);box-shadow:0 1px 2px rgba(0,0,0,0.3),0 1px 3px 1px rgba(0,0,0,0.15);"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:var(--spacing-3);"><span style="font-size:14px;font-weight:500;color:var(--color-on-surface-variant);">Metric</span><span class="material-symbols-outlined" style="color:var(--color-primary);">analytics</span></div><div style="font-size:32px;font-weight:700;font-family:var(--font-brand);line-height:40px;">2,100+</div><div style="display:flex;align-items:center;gap:var(--spacing-2);margin-top:var(--spacing-1);"><span style="font-size:14px;font-weight:500;color:var(--color-tertiary);"><span class="material-symbols-outlined" style="font-size:16px;vertical-align:-3px;">trending_up</span> 12%</span><span style="font-size:14px;color:var(--color-on-surface-variant);">from last period</span></div></div>
+<div style="text-align:center;padding:var(--spacing-4);"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);letter-spacing:0.5px;">TOTAL USERS</div><div style="font-size:45px;font-family:var(--font-brand);line-height:52px;">8.2M</div><div style="font-size:14px;color:var(--color-on-surface-variant);">Annual average</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Dialog</h2>
+    <button class="btn btn-filled m3-interactive" onclick="document.getElementById('demo-dialog').classList.add('open');"><span class="material-symbols-outlined" style="font-size:18px;">open_in_new</span> Open Dialog</button>
+    <div style="margin-top:16px;background:var(--color-surface-container-high);border-radius:var(--radius-extra-large);padding:var(--spacing-6);box-shadow:0 8px 32px rgba(0,0,0,0.16);max-width:400px;">
+      <h3 style="font-family:var(--font-brand);font-size:24px;font-weight:400;margin-bottom:var(--spacing-4);"><span class="material-symbols-outlined" style="font-size:24px;vertical-align:-4px;color:var(--color-primary);margin-right:var(--spacing-2);">delete</span> Confirm Action</h3>
+      <p style="font-size:14px;color:var(--color-on-surface-variant);line-height:20px;margin-bottom:var(--spacing-6);">Are you sure? This action cannot be undone.</p>
+      <div style="display:flex;justify-content:flex-end;gap:var(--spacing-2);"><button class="btn btn-text m3-interactive">Cancel</button><button class="btn btn-filled m3-interactive" style="background:var(--color-error);color:var(--color-on-error);">Delete</button></div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Snackbar</h2>
+    <button class="btn btn-outlined m3-interactive" onclick="showSnackbar()" style="margin-bottom:16px;"><span class="material-symbols-outlined" style="font-size:18px;">notifications</span> Show Snackbar</button>
+    <div class="snackbar" id="demo-snackbar"><span class="material-symbols-outlined" style="font-size:20px;">check_circle</span><span style="flex:1;">Item saved successfully</span><button style="border:none;background:none;color:var(--color-inverse-primary);font-size:14px;font-weight:500;cursor:pointer;" onclick="hideSnackbar()">Undo</button><button style="border:none;background:none;color:var(--color-inverse-on-surface);cursor:pointer;display:flex;" onclick="hideSnackbar()" aria-label="Dismiss"><span class="material-symbols-outlined" style="font-size:20px;">close</span></button></div>
+  </div>
+  <div class="section">
+    <h2>Progress</h2>
+    <div style="display:flex;flex-direction:column;gap:24px;">
+      <div><div class="section-label">Primary &mdash; 65%</div><div class="progress-track"><div class="progress-bar" style="width:65%;"></div></div></div>
+      <div><div class="section-label">Secondary &mdash; 40%</div><div class="progress-track"><div class="progress-bar" style="width:40%;background:var(--color-secondary);"></div></div></div>
+      <div><div class="section-label">Tertiary &mdash; 80%</div><div class="progress-track"><div class="progress-bar" style="width:80%;background:var(--color-tertiary);"></div></div></div>
+      <div style="display:flex;align-items:center;gap:32px;">
+        <div><div class="section-label">Circular &mdash; 65%</div><svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--color-surface-container-highest)" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="var(--color-primary)" stroke-width="4" stroke-dasharray="125.66" stroke-dashoffset="44" stroke-linecap="round" transform="rotate(-90 24 24)"/></svg></div>
+        <div><div class="section-label">Circular &mdash; Indeterminate</div><svg width="48" height="48" viewBox="0 0 48 48" style="animation:spin 1.4s linear infinite;"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--color-surface-container-highest)" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="var(--color-primary)" stroke-width="4" stroke-dasharray="125.66" stroke-dashoffset="94" stroke-linecap="round" transform="rotate(-90 24 24)"/></svg></div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Skeleton</h2>
+    <div style="display:flex;gap:var(--spacing-4);align-items:flex-start;"><div class="skeleton" style="width:40px;height:40px;border-radius:50%;flex-shrink:0;"></div><div style="flex:1;display:flex;flex-direction:column;gap:var(--spacing-2);"><div class="skeleton" style="height:16px;width:40%;border-radius:var(--radius-extra-small);"></div><div class="skeleton" style="height:16px;width:100%;border-radius:var(--radius-extra-small);"></div><div class="skeleton" style="height:16px;width:75%;border-radius:var(--radius-extra-small);"></div></div></div>
+    <div style="margin-top:var(--spacing-4);"><div class="skeleton" style="height:120px;width:100%;border-radius:var(--radius-medium);"></div></div>
+  </div>
+  <div class="section" style="grid-column:1/-1;">
+    <h2>Surface Levels</h2>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;">
+      <div style="background:var(--color-surface);border-radius:var(--radius-medium);padding:var(--spacing-4);text-align:center;border:1px solid var(--color-outline-variant);"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);">Level 0</div><div style="font-size:14px;">Surface</div></div>
+      <div style="background:var(--color-surface-container-lowest);border-radius:var(--radius-medium);padding:var(--spacing-4);text-align:center;"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);">Level 1</div><div style="font-size:14px;">Lowest</div></div>
+      <div style="background:var(--color-surface-container-low);border-radius:var(--radius-medium);padding:var(--spacing-4);text-align:center;"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);">Level 2</div><div style="font-size:14px;">Low</div></div>
+      <div style="background:var(--color-surface-container);border-radius:var(--radius-medium);padding:var(--spacing-4);text-align:center;"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);">Level 3</div><div style="font-size:14px;">Container</div></div>
+      <div style="background:var(--color-surface-container-high);border-radius:var(--radius-medium);padding:var(--spacing-4);text-align:center;"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);">Level 4</div><div style="font-size:14px;">High</div></div>
+      <div style="background:var(--color-surface-container-highest);border-radius:var(--radius-medium);padding:var(--spacing-4);text-align:center;"><div style="font-size:12px;font-weight:500;color:var(--color-on-surface-variant);">Level 5</div><div style="font-size:14px;">Highest</div></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="dialog-scrim" id="demo-dialog" onclick="if(event.target===this)this.classList.remove('open');">
+  <div class="dialog-surface" role="dialog" aria-labelledby="dialog-title" aria-modal="true">
+    <h2 id="dialog-title" style="font-family:var(--font-brand);font-size:24px;font-weight:400;margin-bottom:var(--spacing-4);"><span class="material-symbols-outlined" style="font-size:24px;vertical-align:-4px;color:var(--color-primary);margin-right:var(--spacing-2);">info</span> About This Theme</h2>
+    <p style="font-size:14px;color:var(--color-on-surface-variant);line-height:20px;margin-bottom:var(--spacing-6);">This design system preview shows all generated components using your design tokens.</p>
+    <div style="display:flex;justify-content:flex-end;gap:var(--spacing-2);"><button class="btn btn-text m3-interactive" onclick="document.getElementById('demo-dialog').classList.remove('open');">Close</button><button class="btn btn-filled m3-interactive" onclick="document.getElementById('demo-dialog').classList.remove('open');">Got It</button></div>
+  </div>
+</div>
+<div style="text-align:center;margin-top:48px;padding:24px;color:var(--color-on-surface-variant);font-size:14px;">Generated from design tokens &middot; M3 Architecture &middot; DTCG Compatible &middot; WCAG AA</div>
+<script>
+
+  function toggleTheme(btn) {
+    var d = document.documentElement;
+    if (d.getAttribute('data-theme') === 'dark') {
+      d.removeAttribute('data-theme');
+      btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:18px;">dark_mode</span> Dark';
+    } else {
+      d.setAttribute('data-theme', 'dark');
+      btn.innerHTML = '<span class="material-symbols-outlined" style="font-size:18px;">light_mode</span> Light';
+    }
+  }
+
+  function toggleChip(el) {
+    var selected = el.getAttribute('aria-selected') === 'true';
+    el.setAttribute('aria-selected', String(!selected));
+    if (selected) { el.classList.remove('chip-selected'); el.classList.add('chip-unselected'); }
+    else { el.classList.remove('chip-unselected'); el.classList.add('chip-selected'); }
+  }
+
+  function selectTab(el) {
+    el.parentElement.querySelectorAll('[role="tab"]').forEach(function(t) { t.setAttribute('aria-selected', 'false'); });
+    el.setAttribute('aria-selected', 'true');
+  }
+
+  function selectSidebar(el) {
+    el.parentElement.querySelectorAll('.sidebar-item').forEach(function(s) { s.setAttribute('aria-selected', 'false'); });
+    el.setAttribute('aria-selected', 'true');
+  }
+
+  function selectBnav(el) {
+    el.parentElement.querySelectorAll('.bnav-item').forEach(function(b) { b.setAttribute('aria-selected', 'false'); });
+    el.setAttribute('aria-selected', 'true');
+  }
+
+  function showSnackbar() {
+    var sb = document.getElementById('demo-snackbar');
+    sb.classList.remove('hidden');
+    clearTimeout(sb._timer);
+    sb._timer = setTimeout(function() { sb.classList.add('hidden'); }, 5000);
+  }
+  function hideSnackbar() {
+    var sb = document.getElementById('demo-snackbar');
+    sb.classList.add('hidden');
+    clearTimeout(sb._timer);
+  }
+</script>
+</body>
+</html>

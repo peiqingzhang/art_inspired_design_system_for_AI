@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matisse Red Studio Theme — Palette Review</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: #f0f0f0; color: #1a1a1a; padding: 32px; }
+  h1 { font-family: 'Space Grotesk', serif; font-size: 36px; margin-bottom: 8px; }
+  h2 { font-family: 'Space Grotesk', serif; font-size: 22px; margin-bottom: 16px; color: #333; }
+  .subtitle { font-size: 16px; color: #666; margin-bottom: 32px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
+  .swatch-card { text-align: center; }
+  .swatch { width: 100%; height: 80px; border-radius: 8px; display: flex; align-items: flex-end; justify-content: center; padding: 8px; font-size: 12px; font-weight: 500; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+  .swatch-label { font-size: 13px; font-weight: 600; margin-top: 8px; text-transform: capitalize; }
+  .swatch-hex { font-size: 12px; color: #666; font-family: monospace; }
+  .swatch-meta { font-size: 10px; color: #999; }
+  .swatch-role { font-size: 11px; color: #888; font-style: italic; margin-top: 2px; }
+  .swatch-inline { display: inline-block; width: 16px; height: 16px; border-radius: 3px; vertical-align: middle; box-shadow: 0 0 0 1px rgba(0,0,0,0.15); }
+  .warning { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin-bottom: 8px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.5; }
+  .ok { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 14px; }
+  .preview-split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .preview-frame { border-radius: 8px; padding: 24px; min-height: 200px; }
+  .preview-card { border-radius: 8px; padding: 16px; margin-top: 12px; }
+  .preview-btn { display: inline-block; padding: 8px 20px; border-radius: 20px; font-size: 13px; font-weight: 500; margin-top: 12px; border: none; }
+  .preview-chip { display: inline-block; padding: 4px 12px; border-radius: 16px; font-size: 12px; margin: 4px 4px 4px 0; }
+  .proportion-bar { display: flex; height: 40px; border-radius: 8px; overflow: hidden; font-size: 11px; font-weight: 500; }
+  .proportion-bar > div { display: flex; align-items: center; justify-content: center; min-width: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Matisse Red Studio Theme</h1>
+<div class="subtitle">Palette review — bold, expressive, Fauvist energy &middot; Review colors before generating components</div>
+
+<div class="section">
+<h2>Analysis</h2>
+<div class="warning"><strong>⚠ Very similar:</strong> <span class="swatch-inline" style="background:#A03020;"></span> primary (#A03020) and <span class="swatch-inline" style="background:#b3261e;"></span> error (#b3261e) — these may look indistinguishable in the UI. Consider differentiating or merging.</div>
+<div class="warning"><strong>⚠ Surface ≈ primary:</strong> <span class="swatch-inline" style="background:#B84030;"></span> Page background (#B84030) is very similar to <span class="swatch-inline" style="background:#A03020;"></span> primary (#A03020). Buttons and UI accents in primary will blend into the background.</div>
+<div class="warning"><strong>⚠ Surface ≈ tertiary:</strong> <span class="swatch-inline" style="background:#B84030;"></span> Page background (#B84030) is very similar to <span class="swatch-inline" style="background:#C89040;"></span> tertiary (#C89040). Buttons and UI accents in tertiary will blend into the background.</div>
+</div>
+
+<div class="section"><h2>Painting Proportions</h2><div class="proportion-bar"><div style="width:55.00000000000001%;background:#A03020;color:#fff;">primary 55%</div><div style="width:12.0%;background:#7A5A4A;color:#fff;">neutral 12%</div><div style="width:10.0%;background:#C89040;color:#000;">tertiary 10%</div><div style="width:8.0%;background:#2A6A3A;color:#fff;">secondary 8%</div></div></div>
+
+<div class="section">
+<h2>M3 Color Roles</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#A03020;"></div><div class="swatch-label">primary</div><div class="swatch-hex">#A03020</div><div class="swatch-meta">H:8 S:67 L:38</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#2A6A3A;"></div><div class="swatch-label">secondary</div><div class="swatch-hex">#2A6A3A</div><div class="swatch-meta">H:135 S:43 L:29</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#C89040;"></div><div class="swatch-label">tertiary</div><div class="swatch-hex">#C89040</div><div class="swatch-meta">H:35 S:55 L:52</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#7A5A4A;"></div><div class="swatch-label">neutral</div><div class="swatch-hex">#7A5A4A</div><div class="swatch-meta">H:20 S:24 L:38</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#b3261e;"></div><div class="swatch-label">error</div><div class="swatch-hex">#b3261e</div><div class="swatch-meta">H:3 S:71 L:41</div></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Light Mode Surfaces</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#B84030;color:#fff;">bg</div><div class="swatch-label">light bg</div><div class="swatch-hex">#B84030</div><div class="swatch-meta">H:7 S:59 L:45</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#d7a898;color:#000;">card</div><div class="swatch-label">light card</div><div class="swatch-hex">#d7a898</div><div class="swatch-meta">H:15 S:44 L:72</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#F2E7E2;color:#000;">text</div><div class="swatch-label">light text</div><div class="swatch-hex">#F2E7E2</div><div class="swatch-meta">H:19 S:38 L:92</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#E8C0B0;color:#000;">muted</div><div class="swatch-label">light muted</div><div class="swatch-hex">#E8C0B0</div><div class="swatch-meta">H:17 S:55 L:80</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#984030;color:#fff;">border</div><div class="swatch-label">light border</div><div class="swatch-hex">#984030</div><div class="swatch-meta">H:9 S:52 L:39</div></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Dark Mode Surfaces</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#1A0A08;color:#fff;">bg</div><div class="swatch-label">dark bg</div><div class="swatch-hex">#1A0A08</div><div class="swatch-meta">H:7 S:53 L:7</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#230f0c;color:#fff;">card</div><div class="swatch-label">dark card</div><div class="swatch-hex">#230f0c</div><div class="swatch-meta">H:8 S:49 L:9</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#E8D0C0;color:#000;">text</div><div class="swatch-label">dark text</div><div class="swatch-hex">#E8D0C0</div><div class="swatch-meta">H:24 S:47 L:83</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#8A6A5A;color:#fff;">muted</div><div class="swatch-label">dark muted</div><div class="swatch-hex">#8A6A5A</div><div class="swatch-meta">H:20 S:21 L:45</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#4A2018;color:#fff;">border</div><div class="swatch-label">dark border</div><div class="swatch-hex">#4A2018</div><div class="swatch-meta">H:10 S:51 L:19</div></div>
+
+</div>
+</div>
+
+<div class='section'><h2>Extended Painting Colors</h2><div class='swatch-grid'><div class="swatch-card"><div class="swatch" style="background:#D868A0;color:#000;"></div><div class="swatch-label">hot-pink</div><div class="swatch-hex">#D868A0</div><div class="swatch-meta">H:330 S:59 L:63</div><div class="swatch-role">badges, highlights, accents</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#4A6AAA;color:#fff;"></div><div class="swatch-label">plate-blue</div><div class="swatch-hex">#4A6AAA</div><div class="swatch-meta">H:220 S:39 L:48</div><div class="swatch-role">card accents, sidebar active, tags</div></div>
+</div></div>
+
+<div class="section">
+<h2>Simulated Page Preview</h2>
+<p style="font-size:14px;color:#666;margin-bottom:16px;">How these colors feel as a UI. Left: light mode. Right: dark mode.</p>
+<div class="preview-split">
+  <div class="preview-frame" style="background:#B84030;color:#F2E7E2;">
+    <div style="font-family:'Space Grotesk',serif;font-size:24px;margin-bottom:4px;">Light Mode</div>
+    <div style="font-size:14px;color:#E8C0B0;margin-bottom:12px;">Page background is the painting's dominant color</div>
+    <div class="preview-card" style="background:#d7a898;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+      <div style="font-weight:500;margin-bottom:4px;">Card Title</div>
+      <div style="font-size:13px;color:#E8C0B0;">Supporting text on card surface</div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="preview-btn" style="background:#A03020;color:#fff;">Primary</span>
+        <span class="preview-btn" style="background:#2A6A3A;color:#fff;">Secondary</span>
+        <span class="preview-btn" style="background:#C89040;color:#fff;">Tertiary</span>
+      </div>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;">
+        <span class="preview-chip" style="background:#D868A0;color:#000;">Hot Pink</span><span class="preview-chip" style="background:#4A6AAA;color:#fff;">Plate Blue</span>
+      </div>
+    </div>
+  </div>
+  <div class="preview-frame" style="background:#1A0A08;color:#E8D0C0;">
+    <div style="font-family:'Space Grotesk',serif;font-size:24px;margin-bottom:4px;">Dark Mode</div>
+    <div style="font-size:14px;color:#8A6A5A;margin-bottom:12px;">Deep shadows from the painting</div>
+    <div class="preview-card" style="background:#230f0c;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-weight:500;margin-bottom:4px;">Card Title</div>
+      <div style="font-size:13px;color:#8A6A5A;">Supporting text on card surface</div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="preview-btn" style="background:#A03020;color:#fff;">Primary</span>
+        <span class="preview-btn" style="background:#2A6A3A;color:#fff;">Secondary</span>
+        <span class="preview-btn" style="background:#C89040;color:#fff;">Tertiary</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:24px;padding:16px;color:#999;font-size:13px;">
+  Review these colors and the simulated preview. Ask for adjustments before proceeding to component generation.
+</div>
+</div>
+</body>
+</html>

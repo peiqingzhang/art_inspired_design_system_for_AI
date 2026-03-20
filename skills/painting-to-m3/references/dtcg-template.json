@@ -1,0 +1,383 @@
+# DTCG Token Template Reference
+
+This document shows the exact JSON structure to produce. All tokens follow the W3C DTCG 2025.10 stable specification.
+
+## File: color.tokens.json
+
+```json
+{
+  "color": {
+    "$description": "Color tokens extracted from visual reference",
+    "ref": {
+      "$description": "Reference (raw) palette — tonal scales derived from source image",
+      "primary": {
+        "0":   { "$value": "#000000", "$type": "color" },
+        "10":  { "$value": "#1a1c2e", "$type": "color" },
+        "20":  { "$value": "#2f3154", "$type": "color" },
+        "30":  { "$value": "#45477a", "$type": "color" },
+        "40":  { "$value": "#5c5ea1", "$type": "color" },
+        "50":  { "$value": "#7577b8", "$type": "color" },
+        "60":  { "$value": "#8f91cf", "$type": "color" },
+        "70":  { "$value": "#a9abe6", "$type": "color" },
+        "80":  { "$value": "#c4c5f0", "$type": "color" },
+        "87":  { "$value": "#d6d7f5", "$type": "color" },
+        "90":  { "$value": "#e2e2f8", "$type": "color" },
+        "92":  { "$value": "#e8e8fa", "$type": "color" },
+        "94":  { "$value": "#ededfb", "$type": "color" },
+        "95":  { "$value": "#f0f0fc", "$type": "color" },
+        "96":  { "$value": "#f3f3fd", "$type": "color" },
+        "98":  { "$value": "#f9f9fe", "$type": "color" },
+        "99":  { "$value": "#fcfcff", "$type": "color" },
+        "100": { "$value": "#ffffff", "$type": "color" }
+      },
+      "secondary": {
+        "$description": "Same tonal ramp structure as primary, different hue"
+      },
+      "tertiary": {
+        "$description": "Same tonal ramp structure as primary, different hue"
+      },
+      "neutral": {
+        "$description": "Desaturated version of primary hue for surfaces"
+      },
+      "neutral-variant": {
+        "$description": "Slightly more chromatic neutral for outlines/variants"
+      },
+      "error": {
+        "$description": "Red-based, slightly tinted toward painting's overall hue"
+      }
+    },
+    "sys": {
+      "$description": "System (semantic) color tokens — reference the ref palette",
+      "light": {
+        "primary":                    { "$value": "{color.ref.primary.40}",           "$type": "color" },
+        "on-primary":                 { "$value": "{color.ref.primary.100}",          "$type": "color" },
+        "primary-container":          { "$value": "{color.ref.primary.90}",           "$type": "color" },
+        "on-primary-container":       { "$value": "{color.ref.primary.10}",           "$type": "color" },
+        "primary-fixed":              { "$value": "{color.ref.primary.90}",           "$type": "color" },
+        "primary-fixed-dim":          { "$value": "{color.ref.primary.80}",           "$type": "color" },
+        "on-primary-fixed":           { "$value": "{color.ref.primary.10}",           "$type": "color" },
+        "on-primary-fixed-variant":   { "$value": "{color.ref.primary.30}",           "$type": "color" },
+
+        "secondary":                  { "$value": "{color.ref.secondary.40}",         "$type": "color" },
+        "on-secondary":               { "$value": "{color.ref.secondary.100}",        "$type": "color" },
+        "secondary-container":        { "$value": "{color.ref.secondary.90}",         "$type": "color" },
+        "on-secondary-container":     { "$value": "{color.ref.secondary.10}",         "$type": "color" },
+
+        "tertiary":                   { "$value": "{color.ref.tertiary.40}",          "$type": "color" },
+        "on-tertiary":                { "$value": "{color.ref.tertiary.100}",         "$type": "color" },
+        "tertiary-container":         { "$value": "{color.ref.tertiary.90}",          "$type": "color" },
+        "on-tertiary-container":      { "$value": "{color.ref.tertiary.10}",          "$type": "color" },
+
+        "error":                      { "$value": "{color.ref.error.40}",             "$type": "color" },
+        "on-error":                   { "$value": "{color.ref.error.100}",            "$type": "color" },
+        "error-container":            { "$value": "{color.ref.error.90}",             "$type": "color" },
+        "on-error-container":         { "$value": "{color.ref.error.10}",             "$type": "color" },
+
+        "surface":                    { "$value": "{color.ref.neutral.98}",           "$type": "color" },
+        "on-surface":                 { "$value": "{color.ref.neutral.10}",           "$type": "color" },
+        "surface-variant":            { "$value": "{color.ref.neutral-variant.90}",   "$type": "color" },
+        "on-surface-variant":         { "$value": "{color.ref.neutral-variant.30}",   "$type": "color" },
+
+        "surface-container-lowest":   { "$value": "{color.ref.neutral.100}",          "$type": "color" },
+        "surface-container-low":      { "$value": "{color.ref.neutral.96}",           "$type": "color" },
+        "surface-container":          { "$value": "{color.ref.neutral.94}",           "$type": "color" },
+        "surface-container-high":     { "$value": "{color.ref.neutral.92}",           "$type": "color" },
+        "surface-container-highest":  { "$value": "{color.ref.neutral.90}",           "$type": "color" },
+
+        "outline":                    { "$value": "{color.ref.neutral-variant.50}",   "$type": "color" },
+        "outline-variant":            { "$value": "{color.ref.neutral-variant.80}",   "$type": "color" },
+
+        "inverse-surface":            { "$value": "{color.ref.neutral.20}",           "$type": "color" },
+        "inverse-on-surface":         { "$value": "{color.ref.neutral.95}",           "$type": "color" },
+        "inverse-primary":            { "$value": "{color.ref.primary.80}",           "$type": "color" },
+
+        "scrim":                      { "$value": "{color.ref.neutral.0}",            "$type": "color" },
+        "shadow":                     { "$value": "{color.ref.neutral.0}",            "$type": "color" }
+      },
+      "dark": {
+        "primary":                    { "$value": "{color.ref.primary.80}",           "$type": "color" },
+        "on-primary":                 { "$value": "{color.ref.primary.20}",           "$type": "color" },
+        "primary-container":          { "$value": "{color.ref.primary.30}",           "$type": "color" },
+        "on-primary-container":       { "$value": "{color.ref.primary.90}",           "$type": "color" },
+
+        "secondary":                  { "$value": "{color.ref.secondary.80}",         "$type": "color" },
+        "on-secondary":               { "$value": "{color.ref.secondary.20}",         "$type": "color" },
+        "secondary-container":        { "$value": "{color.ref.secondary.30}",         "$type": "color" },
+        "on-secondary-container":     { "$value": "{color.ref.secondary.90}",         "$type": "color" },
+
+        "tertiary":                   { "$value": "{color.ref.tertiary.80}",          "$type": "color" },
+        "on-tertiary":                { "$value": "{color.ref.tertiary.20}",          "$type": "color" },
+        "tertiary-container":         { "$value": "{color.ref.tertiary.30}",          "$type": "color" },
+        "on-tertiary-container":      { "$value": "{color.ref.tertiary.90}",          "$type": "color" },
+
+        "error":                      { "$value": "{color.ref.error.80}",             "$type": "color" },
+        "on-error":                   { "$value": "{color.ref.error.20}",             "$type": "color" },
+        "error-container":            { "$value": "{color.ref.error.30}",             "$type": "color" },
+        "on-error-container":         { "$value": "{color.ref.error.90}",             "$type": "color" },
+
+        "surface":                    { "$value": "{color.ref.neutral.6}",            "$type": "color" },
+        "on-surface":                 { "$value": "{color.ref.neutral.90}",           "$type": "color" },
+        "surface-variant":            { "$value": "{color.ref.neutral-variant.30}",   "$type": "color" },
+        "on-surface-variant":         { "$value": "{color.ref.neutral-variant.80}",   "$type": "color" },
+
+        "surface-container-lowest":   { "$value": "{color.ref.neutral.4}",            "$type": "color" },
+        "surface-container-low":      { "$value": "{color.ref.neutral.10}",           "$type": "color" },
+        "surface-container":          { "$value": "{color.ref.neutral.12}",           "$type": "color" },
+        "surface-container-high":     { "$value": "{color.ref.neutral.17}",           "$type": "color" },
+        "surface-container-highest":  { "$value": "{color.ref.neutral.22}",           "$type": "color" },
+
+        "outline":                    { "$value": "{color.ref.neutral-variant.60}",   "$type": "color" },
+        "outline-variant":            { "$value": "{color.ref.neutral-variant.30}",   "$type": "color" },
+
+        "inverse-surface":            { "$value": "{color.ref.neutral.90}",           "$type": "color" },
+        "inverse-on-surface":         { "$value": "{color.ref.neutral.20}",           "$type": "color" },
+        "inverse-primary":            { "$value": "{color.ref.primary.40}",           "$type": "color" },
+
+        "scrim":                      { "$value": "{color.ref.neutral.0}",            "$type": "color" },
+        "shadow":                     { "$value": "{color.ref.neutral.0}",            "$type": "color" }
+      }
+    }
+  }
+}
+```
+
+## File: typography.tokens.json
+
+```json
+{
+  "typography": {
+    "$description": "Typography tokens — M3 type scale with custom font pairing",
+    "ref": {
+      "typeface": {
+        "brand":  { "$value": "Font Display Name", "$type": "fontFamily" },
+        "plain":  { "$value": "Font Body Name",    "$type": "fontFamily" }
+      },
+      "weight": {
+        "regular": { "$value": 400, "$type": "fontWeight" },
+        "medium":  { "$value": 500, "$type": "fontWeight" },
+        "bold":    { "$value": 700, "$type": "fontWeight" }
+      }
+    },
+    "sys": {
+      "display-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "57px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "64px",
+          "letterSpacing": "-0.25px"
+        }
+      },
+      "display-medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "45px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "52px",
+          "letterSpacing": "0px"
+        }
+      },
+      "display-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "36px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "44px",
+          "letterSpacing": "0px"
+        }
+      },
+      "headline-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "32px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "40px",
+          "letterSpacing": "0px"
+        }
+      },
+      "headline-medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "28px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "36px",
+          "letterSpacing": "0px"
+        }
+      },
+      "headline-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "24px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "32px",
+          "letterSpacing": "0px"
+        }
+      },
+      "title-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.brand}",
+          "fontSize": "22px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "28px",
+          "letterSpacing": "0px"
+        }
+      },
+      "title-medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "16px",
+          "fontWeight": "{typography.ref.weight.medium}",
+          "lineHeight": "24px",
+          "letterSpacing": "0.15px"
+        }
+      },
+      "title-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "14px",
+          "fontWeight": "{typography.ref.weight.medium}",
+          "lineHeight": "20px",
+          "letterSpacing": "0.1px"
+        }
+      },
+      "body-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "16px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "24px",
+          "letterSpacing": "0.5px"
+        }
+      },
+      "body-medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "14px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "20px",
+          "letterSpacing": "0.25px"
+        }
+      },
+      "body-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "12px",
+          "fontWeight": "{typography.ref.weight.regular}",
+          "lineHeight": "16px",
+          "letterSpacing": "0.4px"
+        }
+      },
+      "label-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "14px",
+          "fontWeight": "{typography.ref.weight.medium}",
+          "lineHeight": "20px",
+          "letterSpacing": "0.1px"
+        }
+      },
+      "label-medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "12px",
+          "fontWeight": "{typography.ref.weight.medium}",
+          "lineHeight": "16px",
+          "letterSpacing": "0.5px"
+        }
+      },
+      "label-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.ref.typeface.plain}",
+          "fontSize": "11px",
+          "fontWeight": "{typography.ref.weight.medium}",
+          "lineHeight": "16px",
+          "letterSpacing": "0.5px"
+        }
+      }
+    }
+  }
+}
+```
+
+## File: shape.tokens.json
+
+```json
+{
+  "shape": {
+    "$description": "Shape tokens — corner radii derived from visual mood",
+    "corner": {
+      "none":        { "$value": "0px",    "$type": "dimension", "$description": "Sharp corners" },
+      "extra-small": { "$value": "4px",    "$type": "dimension" },
+      "small":       { "$value": "8px",    "$type": "dimension" },
+      "medium":      { "$value": "12px",   "$type": "dimension" },
+      "large":       { "$value": "16px",   "$type": "dimension" },
+      "extra-large": { "$value": "28px",   "$type": "dimension" },
+      "full":        { "$value": "9999px", "$type": "dimension", "$description": "Pill shape" }
+    }
+  }
+}
+```
+
+## File: spacing.tokens.json
+
+```json
+{
+  "spacing": {
+    "$description": "Spacing tokens — 4px base unit, M3-aligned scale",
+    "0":   { "$value": "0px",  "$type": "dimension" },
+    "1":   { "$value": "4px",  "$type": "dimension" },
+    "2":   { "$value": "8px",  "$type": "dimension" },
+    "3":   { "$value": "12px", "$type": "dimension" },
+    "4":   { "$value": "16px", "$type": "dimension" },
+    "5":   { "$value": "20px", "$type": "dimension" },
+    "6":   { "$value": "24px", "$type": "dimension" },
+    "8":   { "$value": "32px", "$type": "dimension" },
+    "10":  { "$value": "40px", "$type": "dimension" },
+    "12":  { "$value": "48px", "$type": "dimension" },
+    "16":  { "$value": "64px", "$type": "dimension" },
+    "20":  { "$value": "80px", "$type": "dimension" },
+    "24":  { "$value": "96px", "$type": "dimension" }
+  }
+}
+```
+
+## File: manifest.json
+
+```json
+{
+  "$schema": "https://designtokens.org/schemas/manifest.json",
+  "$description": "Design tokens extracted from [painting/image name]",
+  "sources": [
+    { "path": "color.tokens.json" },
+    { "path": "typography.tokens.json" },
+    { "path": "shape.tokens.json" },
+    { "path": "spacing.tokens.json" }
+  ]
+}
+```
+
+## Notes on DTCG Compliance
+
+1. **$-prefix**: All specification properties MUST have the `$` prefix: `$value`, `$type`, `$description`, `$extensions`, `$deprecated`
+2. **Aliases**: Use curly brace syntax `{path.to.token}` for references between tokens
+3. **File extension**: Use `.tokens.json` for DTCG files
+4. **Color type**: `$type: "color"` — values as hex strings `#rrggbb` or `#rrggbbaa`
+5. **Dimension type**: `$type: "dimension"` — values as string with unit like `"16px"` or `"1rem"`
+6. **Typography type**: `$type: "typography"` — composite value with fontFamily, fontSize, fontWeight, lineHeight, letterSpacing
+7. **FontFamily type**: `$type: "fontFamily"` — string value of font name(s)
+8. **FontWeight type**: `$type: "fontWeight"` — numeric value (100-900) or keyword

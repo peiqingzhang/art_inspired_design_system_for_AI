@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hopper Nighthawks Theme — Palette Review</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'IBM Plex Sans', system-ui, sans-serif; background: #f0f0f0; color: #1a1a1a; padding: 32px; }
+  h1 { font-family: 'DM Sans', serif; font-size: 36px; margin-bottom: 8px; }
+  h2 { font-family: 'DM Sans', serif; font-size: 22px; margin-bottom: 16px; color: #333; }
+  .subtitle { font-size: 16px; color: #666; margin-bottom: 32px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
+  .swatch-card { text-align: center; }
+  .swatch { width: 100%; height: 80px; border-radius: 8px; display: flex; align-items: flex-end; justify-content: center; padding: 8px; font-size: 12px; font-weight: 500; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+  .swatch-label { font-size: 13px; font-weight: 600; margin-top: 8px; text-transform: capitalize; }
+  .swatch-hex { font-size: 12px; color: #666; font-family: monospace; }
+  .swatch-meta { font-size: 10px; color: #999; }
+  .swatch-role { font-size: 11px; color: #888; font-style: italic; margin-top: 2px; }
+  .swatch-inline { display: inline-block; width: 16px; height: 16px; border-radius: 3px; vertical-align: middle; box-shadow: 0 0 0 1px rgba(0,0,0,0.15); }
+  .warning { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin-bottom: 8px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.5; }
+  .ok { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 14px; }
+  .preview-split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .preview-frame { border-radius: 8px; padding: 24px; min-height: 200px; }
+  .preview-card { border-radius: 8px; padding: 16px; margin-top: 12px; }
+  .preview-btn { display: inline-block; padding: 8px 20px; border-radius: 20px; font-size: 13px; font-weight: 500; margin-top: 12px; border: none; }
+  .preview-chip { display: inline-block; padding: 4px 12px; border-radius: 16px; font-size: 12px; margin: 4px 4px 4px 0; }
+  .proportion-bar { display: flex; height: 40px; border-radius: 8px; overflow: hidden; font-size: 11px; font-weight: 500; }
+  .proportion-bar > div { display: flex; align-items: center; justify-content: center; min-width: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Hopper Nighthawks Theme</h1>
+<div class="subtitle">Palette review — urban, noir, late-night melancholy &middot; Review colors before generating components</div>
+
+<div class="section">
+<h2>Analysis</h2>
+<div class="warning"><strong>⚠ Very similar:</strong> <span class="swatch-inline" style="background:#8A3020;"></span> secondary (#8A3020) and <span class="swatch-inline" style="background:#b3261e;"></span> error (#b3261e) — these may look indistinguishable in the UI. Consider differentiating or merging.</div>
+</div>
+
+<div class="section"><h2>Painting Proportions</h2><div class="proportion-bar"><div style="width:35.0%;background:#1A4A4A;color:#fff;">primary 35%</div><div style="width:20.0%;background:#5A5A50;color:#fff;">neutral 20%</div><div style="width:15.0%;background:#8A3020;color:#fff;">secondary 15%</div><div style="width:15.0%;background:#C8AA40;color:#000;">tertiary 15%</div></div></div>
+
+<div class="section">
+<h2>M3 Color Roles</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#1A4A4A;"></div><div class="swatch-label">primary</div><div class="swatch-hex">#1A4A4A</div><div class="swatch-meta">H:180 S:48 L:20</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#8A3020;"></div><div class="swatch-label">secondary</div><div class="swatch-hex">#8A3020</div><div class="swatch-meta">H:9 S:62 L:33</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#C8AA40;"></div><div class="swatch-label">tertiary</div><div class="swatch-hex">#C8AA40</div><div class="swatch-meta">H:47 S:55 L:52</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#5A5A50;"></div><div class="swatch-label">neutral</div><div class="swatch-hex">#5A5A50</div><div class="swatch-meta">H:60 S:6 L:33</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#b3261e;"></div><div class="swatch-label">error</div><div class="swatch-hex">#b3261e</div><div class="swatch-meta">H:3 S:71 L:41</div></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Light Mode Surfaces</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#D8C880;color:#000;">bg</div><div class="swatch-label">light bg</div><div class="swatch-hex">#D8C880</div><div class="swatch-meta">H:49 S:53 L:67</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#e7dba0;color:#000;">card</div><div class="swatch-label">light card</div><div class="swatch-hex">#e7dba0</div><div class="swatch-meta">H:50 S:60 L:77</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#2C5252;color:#fff;">text</div><div class="swatch-label">light text</div><div class="swatch-hex">#2C5252</div><div class="swatch-meta">H:180 S:30 L:25</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#5A6A5A;color:#fff;">muted</div><div class="swatch-label">light muted</div><div class="swatch-hex">#5A6A5A</div><div class="swatch-meta">H:120 S:8 L:38</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#8A9A80;color:#000;">border</div><div class="swatch-label">light border</div><div class="swatch-hex">#8A9A80</div><div class="swatch-meta">H:97 S:11 L:55</div></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Dark Mode Surfaces</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#0A1818;color:#fff;">bg</div><div class="swatch-label">dark bg</div><div class="swatch-hex">#0A1818</div><div class="swatch-meta">H:180 S:41 L:7</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#0f2121;color:#fff;">card</div><div class="swatch-label">dark card</div><div class="swatch-hex">#0f2121</div><div class="swatch-meta">H:180 S:38 L:9</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#D8D0A8;color:#000;">text</div><div class="swatch-label">dark text</div><div class="swatch-hex">#D8D0A8</div><div class="swatch-meta">H:50 S:38 L:75</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#6A7A70;color:#fff;">muted</div><div class="swatch-label">dark muted</div><div class="swatch-hex">#6A7A70</div><div class="swatch-meta">H:142 S:7 L:45</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#2A3A38;color:#fff;">border</div><div class="swatch-label">dark border</div><div class="swatch-hex">#2A3A38</div><div class="swatch-meta">H:172 S:16 L:20</div></div>
+
+</div>
+</div>
+
+<div class='section'><h2>Extended Painting Colors</h2><div class='swatch-grid'><div class="swatch-card"><div class="swatch" style="background:#6A3828;color:#fff;"></div><div class="swatch-label">counter-mahogany</div><div class="swatch-hex">#6A3828</div><div class="swatch-meta">H:15 S:45 L:29</div><div class="swatch-role">card accents, sidebar active, warm anchors</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#38A868;color:#fff;"></div><div class="swatch-label">neon-green</div><div class="swatch-hex">#38A868</div><div class="swatch-meta">H:146 S:50 L:44</div><div class="swatch-role">badges, highlights, active states</div></div>
+</div></div>
+
+<div class="section">
+<h2>Simulated Page Preview</h2>
+<p style="font-size:14px;color:#666;margin-bottom:16px;">How these colors feel as a UI. Left: light mode. Right: dark mode.</p>
+<div class="preview-split">
+  <div class="preview-frame" style="background:#D8C880;color:#2C5252;">
+    <div style="font-family:'DM Sans',serif;font-size:24px;margin-bottom:4px;">Light Mode</div>
+    <div style="font-size:14px;color:#5A6A5A;margin-bottom:12px;">Page background is the painting's dominant color</div>
+    <div class="preview-card" style="background:#e7dba0;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+      <div style="font-weight:500;margin-bottom:4px;">Card Title</div>
+      <div style="font-size:13px;color:#5A6A5A;">Supporting text on card surface</div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="preview-btn" style="background:#1A4A4A;color:#fff;">Primary</span>
+        <span class="preview-btn" style="background:#8A3020;color:#fff;">Secondary</span>
+        <span class="preview-btn" style="background:#C8AA40;color:#fff;">Tertiary</span>
+      </div>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;">
+        <span class="preview-chip" style="background:#6A3828;color:#fff;">Counter Mahogany</span><span class="preview-chip" style="background:#38A868;color:#fff;">Neon Green</span>
+      </div>
+    </div>
+  </div>
+  <div class="preview-frame" style="background:#0A1818;color:#D8D0A8;">
+    <div style="font-family:'DM Sans',serif;font-size:24px;margin-bottom:4px;">Dark Mode</div>
+    <div style="font-size:14px;color:#6A7A70;margin-bottom:12px;">Deep shadows from the painting</div>
+    <div class="preview-card" style="background:#0f2121;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-weight:500;margin-bottom:4px;">Card Title</div>
+      <div style="font-size:13px;color:#6A7A70;">Supporting text on card surface</div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="preview-btn" style="background:#1A4A4A;color:#fff;">Primary</span>
+        <span class="preview-btn" style="background:#8A3020;color:#fff;">Secondary</span>
+        <span class="preview-btn" style="background:#C8AA40;color:#fff;">Tertiary</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:24px;padding:16px;color:#999;font-size:13px;">
+  Review these colors and the simulated preview. Ask for adjustments before proceeding to component generation.
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hokusai Great Wave Theme — Palette Review</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: #f0f0f0; color: #1a1a1a; padding: 32px; }
+  h1 { font-family: 'Noto Serif JP', serif; font-size: 36px; margin-bottom: 8px; }
+  h2 { font-family: 'Noto Serif JP', serif; font-size: 22px; margin-bottom: 16px; color: #333; }
+  .subtitle { font-size: 16px; color: #666; margin-bottom: 32px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
+  .swatch-card { text-align: center; }
+  .swatch { width: 100%; height: 80px; border-radius: 8px; display: flex; align-items: flex-end; justify-content: center; padding: 8px; font-size: 12px; font-weight: 500; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+  .swatch-label { font-size: 13px; font-weight: 600; margin-top: 8px; text-transform: capitalize; }
+  .swatch-hex { font-size: 12px; color: #666; font-family: monospace; }
+  .swatch-meta { font-size: 10px; color: #999; }
+  .swatch-role { font-size: 11px; color: #888; font-style: italic; margin-top: 2px; }
+  .swatch-inline { display: inline-block; width: 16px; height: 16px; border-radius: 3px; vertical-align: middle; box-shadow: 0 0 0 1px rgba(0,0,0,0.15); }
+  .warning { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin-bottom: 8px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.5; }
+  .ok { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 14px; }
+  .preview-split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .preview-frame { border-radius: 8px; padding: 24px; min-height: 200px; }
+  .preview-card { border-radius: 8px; padding: 16px; margin-top: 12px; }
+  .preview-btn { display: inline-block; padding: 8px 20px; border-radius: 20px; font-size: 13px; font-weight: 500; margin-top: 12px; border: none; }
+  .preview-chip { display: inline-block; padding: 4px 12px; border-radius: 16px; font-size: 12px; margin: 4px 4px 4px 0; }
+  .proportion-bar { display: flex; height: 40px; border-radius: 8px; overflow: hidden; font-size: 11px; font-weight: 500; }
+  .proportion-bar > div { display: flex; align-items: center; justify-content: center; min-width: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Hokusai Great Wave Theme</h1>
+<div class="subtitle">Palette review — dramatic, powerful, ukiyo-e precision &middot; Review colors before generating components</div>
+
+<div class="section">
+<h2>Analysis</h2>
+<div class="ok">✓ No color similarity issues detected.</div>
+</div>
+
+<div class="section"><h2>Painting Proportions</h2><div class="proportion-bar"><div style="width:35.0%;background:#1A3A6A;color:#fff;">primary 35%</div><div style="width:20.0%;background:#3A6A8A;color:#fff;">secondary 20%</div><div style="width:15.0%;background:#C8B078;color:#000;">tertiary 15%</div><div style="width:10.0%;background:#6A6A6A;color:#fff;">neutral 10%</div></div></div>
+
+<div class="section">
+<h2>M3 Color Roles</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#1A3A6A;"></div><div class="swatch-label">primary</div><div class="swatch-hex">#1A3A6A</div><div class="swatch-meta">H:216 S:61 L:26</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#3A6A8A;"></div><div class="swatch-label">secondary</div><div class="swatch-hex">#3A6A8A</div><div class="swatch-meta">H:204 S:41 L:38</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#C8B078;"></div><div class="swatch-label">tertiary</div><div class="swatch-hex">#C8B078</div><div class="swatch-meta">H:42 S:42 L:63</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#6A6A6A;"></div><div class="swatch-label">neutral</div><div class="swatch-hex">#6A6A6A</div><div class="swatch-meta">H:0 S:0 L:42</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#b3261e;"></div><div class="swatch-label">error</div><div class="swatch-hex">#b3261e</div><div class="swatch-meta">H:3 S:71 L:41</div></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Light Mode Surfaces</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#D8CDB0;color:#000;">bg</div><div class="swatch-label">light bg</div><div class="swatch-hex">#D8CDB0</div><div class="swatch-meta">H:44 S:34 L:77</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#e7e0cc;color:#000;">card</div><div class="swatch-label">light card</div><div class="swatch-hex">#e7e0cc</div><div class="swatch-meta">H:44 S:36 L:85</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#2C3952;color:#fff;">text</div><div class="swatch-label">light text</div><div class="swatch-hex">#2C3952</div><div class="swatch-meta">H:219 S:30 L:25</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#7A7060;color:#fff;">muted</div><div class="swatch-label">light muted</div><div class="swatch-hex">#7A7060</div><div class="swatch-meta">H:37 S:12 L:43</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#A8A088;color:#000;">border</div><div class="swatch-label">light border</div><div class="swatch-hex">#A8A088</div><div class="swatch-meta">H:45 S:16 L:60</div></div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Dark Mode Surfaces</h2>
+<div class="swatch-grid">
+<div class="swatch-card"><div class="swatch" style="background:#0A1428;color:#fff;">bg</div><div class="swatch-label">dark bg</div><div class="swatch-hex">#0A1428</div><div class="swatch-meta">H:220 S:60 L:10</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#0f1c31;color:#fff;">card</div><div class="swatch-label">dark card</div><div class="swatch-hex">#0f1c31</div><div class="swatch-meta">H:217 S:53 L:13</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#D8D0B8;color:#000;">text</div><div class="swatch-label">dark text</div><div class="swatch-hex">#D8D0B8</div><div class="swatch-meta">H:45 S:29 L:78</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#7A8898;color:#000;">muted</div><div class="swatch-label">dark muted</div><div class="swatch-hex">#7A8898</div><div class="swatch-meta">H:212 S:13 L:54</div></div>
+<div class="swatch-card"><div class="swatch" style="background:#2A3A50;color:#fff;">border</div><div class="swatch-label">dark border</div><div class="swatch-hex">#2A3A50</div><div class="swatch-meta">H:215 S:31 L:24</div></div>
+
+</div>
+</div>
+
+<div class='section'><h2>Extended Painting Colors</h2><div class='swatch-grid'><div class="swatch-card"><div class="swatch" style="background:#E8E8E0;color:#000;"></div><div class="swatch-label">foam-white</div><div class="swatch-hex">#E8E8E0</div><div class="swatch-meta">H:60 S:15 L:89</div><div class="swatch-role">card surfaces, hero highlights</div></div>
+</div></div>
+
+<div class="section">
+<h2>Simulated Page Preview</h2>
+<p style="font-size:14px;color:#666;margin-bottom:16px;">How these colors feel as a UI. Left: light mode. Right: dark mode.</p>
+<div class="preview-split">
+  <div class="preview-frame" style="background:#D8CDB0;color:#2C3952;">
+    <div style="font-family:'Noto Serif JP',serif;font-size:24px;margin-bottom:4px;">Light Mode</div>
+    <div style="font-size:14px;color:#7A7060;margin-bottom:12px;">Page background is the painting's dominant color</div>
+    <div class="preview-card" style="background:#e7e0cc;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+      <div style="font-weight:500;margin-bottom:4px;">Card Title</div>
+      <div style="font-size:13px;color:#7A7060;">Supporting text on card surface</div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="preview-btn" style="background:#1A3A6A;color:#fff;">Primary</span>
+        <span class="preview-btn" style="background:#3A6A8A;color:#fff;">Secondary</span>
+        <span class="preview-btn" style="background:#C8B078;color:#fff;">Tertiary</span>
+      </div>
+      <div style="margin-top:8px;display:flex;flex-wrap:wrap;">
+        <span class="preview-chip" style="background:#E8E8E0;color:#000;">Foam White</span>
+      </div>
+    </div>
+  </div>
+  <div class="preview-frame" style="background:#0A1428;color:#D8D0B8;">
+    <div style="font-family:'Noto Serif JP',serif;font-size:24px;margin-bottom:4px;">Dark Mode</div>
+    <div style="font-size:14px;color:#7A8898;margin-bottom:12px;">Deep shadows from the painting</div>
+    <div class="preview-card" style="background:#0f1c31;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-weight:500;margin-bottom:4px;">Card Title</div>
+      <div style="font-size:13px;color:#7A8898;">Supporting text on card surface</div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="preview-btn" style="background:#1A3A6A;color:#fff;">Primary</span>
+        <span class="preview-btn" style="background:#3A6A8A;color:#fff;">Secondary</span>
+        <span class="preview-btn" style="background:#C8B078;color:#fff;">Tertiary</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:24px;padding:16px;color:#999;font-size:13px;">
+  Review these colors and the simulated preview. Ask for adjustments before proceeding to component generation.
+</div>
+</div>
+</body>
+</html>

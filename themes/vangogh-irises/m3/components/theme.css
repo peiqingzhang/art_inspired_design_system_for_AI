@@ -1,0 +1,200 @@
+/* Design System Theme — Auto-generated from design tokens */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Source+Serif+4:wght@400;500;700&display=swap');
+
+:root {
+  --font-brand: 'Playfair Display', sans-serif;
+  --font-plain: 'Source Serif 4', sans-serif;
+
+  --color-error: #861635;
+  --color-error-container: #f2d8df;
+  --color-inverse-on-surface: #f1f1f2;
+  --color-inverse-primary: #b7bee0;
+  --color-inverse-surface: #2d2f38;
+  --color-on-error: #feffff;
+  --color-on-error-container: #240e14;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #13151f;
+  --color-on-primary-fixed: #13151f;
+  --color-on-primary-fixed-variant: #2d386b;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #231f0f;
+  --color-on-surface: #16171c;
+  --color-on-surface-variant: #3e435a;
+  --color-on-tertiary: #fffeff;
+  --color-on-tertiary-container: #151e14;
+  --color-outline: #687096;
+  --color-outline-variant: #c2c5d5;
+  --color-primary: #374481;
+  --color-primary-container: #dee0ec;
+  --color-primary-fixed: #dee0ec;
+  --color-primary-fixed-dim: #b7bee0;
+  --color-scrim: #000000;
+  --color-secondary: #86701a;
+  --color-secondary-container: #f1ecd9;
+  --color-shadow: #000000;
+  --color-surface: #f9f9fa;
+  --color-surface-container: #eeeef1;
+  --color-surface-container-high: #e8e9ec;
+  --color-surface-container-highest: #e2e3e8;
+  --color-surface-container-low: #f4f4f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #e0e2ea;
+  --color-tertiary: #457e43;
+  --color-tertiary-container: #e0eae0;
+
+  --radius-extra-large: 32px;
+  --radius-extra-small: 8px;
+  --radius-full: 9999px;
+  --radius-large: 24px;
+  --radius-medium: 16px;
+  --radius-none: 0px;
+  --radius-small: 12px;
+
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-2: 8px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  --type-body-large-font-family: Source Serif 4;
+  --type-body-large-font-size: 16px;
+  --type-body-large-font-weight: 400;
+  --type-body-large-line-height: 24px;
+  --type-body-large-letter-spacing: 0.5px;
+  --type-body-medium-font-family: Source Serif 4;
+  --type-body-medium-font-size: 14px;
+  --type-body-medium-font-weight: 400;
+  --type-body-medium-line-height: 20px;
+  --type-body-medium-letter-spacing: 0.25px;
+  --type-body-small-font-family: Source Serif 4;
+  --type-body-small-font-size: 12px;
+  --type-body-small-font-weight: 400;
+  --type-body-small-line-height: 16px;
+  --type-body-small-letter-spacing: 0.4px;
+  --type-display-large-font-family: Playfair Display;
+  --type-display-large-font-size: 57px;
+  --type-display-large-font-weight: 400;
+  --type-display-large-line-height: 64px;
+  --type-display-large-letter-spacing: -0.25px;
+  --type-display-medium-font-family: Playfair Display;
+  --type-display-medium-font-size: 45px;
+  --type-display-medium-font-weight: 400;
+  --type-display-medium-line-height: 52px;
+  --type-display-medium-letter-spacing: 0px;
+  --type-display-small-font-family: Playfair Display;
+  --type-display-small-font-size: 36px;
+  --type-display-small-font-weight: 400;
+  --type-display-small-line-height: 44px;
+  --type-display-small-letter-spacing: 0px;
+  --type-headline-large-font-family: Playfair Display;
+  --type-headline-large-font-size: 32px;
+  --type-headline-large-font-weight: 400;
+  --type-headline-large-line-height: 40px;
+  --type-headline-large-letter-spacing: 0px;
+  --type-headline-medium-font-family: Playfair Display;
+  --type-headline-medium-font-size: 28px;
+  --type-headline-medium-font-weight: 400;
+  --type-headline-medium-line-height: 36px;
+  --type-headline-medium-letter-spacing: 0px;
+  --type-headline-small-font-family: Playfair Display;
+  --type-headline-small-font-size: 24px;
+  --type-headline-small-font-weight: 400;
+  --type-headline-small-line-height: 32px;
+  --type-headline-small-letter-spacing: 0px;
+  --type-label-large-font-family: Source Serif 4;
+  --type-label-large-font-size: 14px;
+  --type-label-large-font-weight: 500;
+  --type-label-large-line-height: 20px;
+  --type-label-large-letter-spacing: 0.1px;
+  --type-label-medium-font-family: Source Serif 4;
+  --type-label-medium-font-size: 12px;
+  --type-label-medium-font-weight: 500;
+  --type-label-medium-line-height: 16px;
+  --type-label-medium-letter-spacing: 0.5px;
+  --type-label-small-font-family: Source Serif 4;
+  --type-label-small-font-size: 11px;
+  --type-label-small-font-weight: 500;
+  --type-label-small-line-height: 16px;
+  --type-label-small-letter-spacing: 0.5px;
+  --type-title-large-font-family: Playfair Display;
+  --type-title-large-font-size: 22px;
+  --type-title-large-font-weight: 400;
+  --type-title-large-line-height: 28px;
+  --type-title-large-letter-spacing: 0px;
+  --type-title-medium-font-family: Source Serif 4;
+  --type-title-medium-font-size: 16px;
+  --type-title-medium-font-weight: 500;
+  --type-title-medium-line-height: 24px;
+  --type-title-medium-letter-spacing: 0.15px;
+  --type-title-small-font-family: Source Serif 4;
+  --type-title-small-font-size: 14px;
+  --type-title-small-font-weight: 500;
+  --type-title-small-line-height: 20px;
+  --type-title-small-letter-spacing: 0.1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-error: #f0a7bb;
+    --color-error-container: #831533;
+    --color-inverse-on-surface: #2d2f38;
+    --color-inverse-primary: #374481;
+    --color-inverse-surface: #e2e3e8;
+    --color-on-error: #570e22;
+    --color-on-error-container: #f2d8df;
+    --color-on-primary: #1e2547;
+    --color-on-primary-container: #dee0ec;
+    --color-on-secondary: #554711;
+    --color-on-secondary-container: #f1ecd9;
+    --color-on-surface: #e2e3e8;
+    --color-on-surface-variant: #c2c5d5;
+    --color-on-tertiary: #244223;
+    --color-on-tertiary-container: #e0eae0;
+    --color-outline: #868cab;
+    --color-outline-variant: #3e435a;
+    --color-primary: #b7bee0;
+    --color-primary-container: #2d386b;
+    --color-scrim: #000000;
+    --color-secondary: #eee0aa;
+    --color-secondary-container: #7f6b19;
+    --color-shadow: #000000;
+    --color-surface: #0d0e10;
+    --color-surface-container: #1b1c21;
+    --color-surface-container-high: #27282f;
+    --color-surface-container-highest: #32343d;
+    --color-surface-container-low: #16171c;
+    --color-surface-container-lowest: #09090a;
+    --color-surface-variant: #3e435a;
+    --color-tertiary: #bddbbc;
+    --color-tertiary-container: #366434;
+  }
+}
+
+/* M3 State Layers — hover 8%, focus 12%, pressed 12%, disabled 38% */
+.m3-interactive {
+  position: relative;
+  overflow: hidden;
+}
+.m3-interactive .state-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.m3-interactive:hover .state-layer { opacity: 0.08; }
+.m3-interactive:focus-visible .state-layer { opacity: 0.12; }
+.m3-interactive:active .state-layer { opacity: 0.12; }
+.m3-interactive:disabled .state-layer,
+.m3-interactive[aria-disabled="true"] .state-layer { opacity: 0; }

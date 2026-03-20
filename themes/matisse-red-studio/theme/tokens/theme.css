@@ -1,0 +1,96 @@
+/* matisse-red-studio-theme -- generated design tokens as CSS custom properties */
+
+:root {
+  --md-sys-color-primary: #86281a;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #f1dcd9;
+  --md-sys-color-on-primary-container: #23110f;
+  --md-sys-color-primary-fixed: #f1dcd9;
+  --md-sys-color-primary-fixed-dim: #eeb2aa;
+  --md-sys-color-on-primary-fixed: #23110f;
+  --md-sys-color-on-primary-fixed-variant: #7f2619;
+  --md-sys-color-secondary: #338247;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #ddede1;
+  --md-sys-color-on-secondary-container: #122016;
+  --md-sys-color-tertiary: #855e26;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #efe7db;
+  --md-sys-color-on-tertiary-container: #211a11;
+  --md-sys-color-error: #861d16;
+  --md-sys-color-on-error: #feffff;
+  --md-sys-color-error-container: #f2dad8;
+  --md-sys-color-on-error-container: #240f0e;
+  --md-sys-color-surface: #B84030;
+  --md-sys-color-on-surface: #F2E7E2;
+  --md-sys-color-surface-variant: #eedfdc;
+  --md-sys-color-on-surface-variant: #E8C0B0;
+  --md-sys-color-surface-container-lowest: #d6a797;
+  --md-sys-color-surface-container-low: #d19482;
+  --md-sys-color-surface-container: #cd7e6b;
+  --md-sys-color-surface-container-high: #ca6853;
+  --md-sys-color-surface-container-highest: #c74f3b;
+  --md-sys-color-outline: #984030;
+  --md-sys-color-outline-variant: #e7b7b0;
+  --md-sys-color-inverse-surface: #531a12;
+  --md-sys-color-inverse-on-surface: #e9c3bd;
+  --md-sys-color-inverse-primary: #eeb2aa;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-hot-pink: #852254;
+  --md-sys-color-on-hot-pink: #ffffff;
+  --md-sys-color-hot-pink-container: #f0dae5;
+  --md-sys-color-on-hot-pink-container: #221019;
+  --md-sys-color-plate-blue: #385081;
+  --md-sys-color-on-plate-blue: #ffffff;
+  --md-sys-color-plate-blue-container: #dee3ec;
+  --md-sys-color-on-plate-blue-container: #13171f;
+
+  --md-sys-typescale-brand-font: 'Space Grotesk';
+  --md-sys-typescale-plain-font: 'DM Sans';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #eeb2aa;
+    --md-sys-color-on-primary: #551911;
+    --md-sys-color-primary-container: #7f2619;
+    --md-sys-color-on-primary-container: #f1dcd9;
+    --md-sys-color-secondary: #b5e2c0;
+    --md-sys-color-on-secondary: #1c4927;
+    --md-sys-color-secondary-container: #2b6d3b;
+    --md-sys-color-on-secondary-container: #ddede1;
+    --md-sys-color-tertiary: #e8d0af;
+    --md-sys-color-on-tertiary: #4f3716;
+    --md-sys-color-tertiary-container: #765322;
+    --md-sys-color-on-tertiary-container: #efe7db;
+    --md-sys-color-error: #f0aca7;
+    --md-sys-color-on-error: #57130e;
+    --md-sys-color-error-container: #831c15;
+    --md-sys-color-on-error-container: #f2dad8;
+    --md-sys-color-surface: #1A0A08;
+    --md-sys-color-on-surface: #E8D0C0;
+    --md-sys-color-surface-variant: #772b21;
+    --md-sys-color-on-surface-variant: #8A6A5A;
+    --md-sys-color-surface-container-lowest: #230f0c;
+    --md-sys-color-surface-container-low: #210d0b;
+    --md-sys-color-surface-container: #1f0c0a;
+    --md-sys-color-surface-container-high: #1d0b09;
+    --md-sys-color-surface-container-highest: #1b0a08;
+    --md-sys-color-outline: #4A2018;
+    --md-sys-color-outline-variant: #772b21;
+    --md-sys-color-inverse-surface: #f1e5e3;
+    --md-sys-color-inverse-on-surface: #531a12;
+    --md-sys-color-inverse-primary: #86281a;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-hot-pink: #eaadcc;
+    --md-sys-color-on-hot-pink: #511433;
+    --md-sys-color-hot-pink-container: #791f4c;
+    --md-sys-color-on-hot-pink-container: #f0dae5;
+    --md-sys-color-plate-blue: #b7c5e0;
+    --md-sys-color-on-plate-blue: #1e2c47;
+    --md-sys-color-plate-blue-container: #2e426a;
+    --md-sys-color-on-plate-blue-container: #dee3ec;
+  }
+}
