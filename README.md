@@ -28,7 +28,7 @@ Painting image
 
 ## Themes
 
-Eight paintings, each with both an M3 (strict) and Theme (expressive) variant — 16 complete design systems.
+Eight paintings, every single of them is completely in the Public Domain., each with both an M3 (strict) and Theme (expressive) variant — 16 complete design systems.
 
 | Theme | Painting | Mood |
 |-------|----------|------|
