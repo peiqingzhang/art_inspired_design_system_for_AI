@@ -770,7 +770,7 @@
           "$type": "color"
         },
         "on-secondary-container": {
-          "$value": "{color.ref.secondary.90}",
+          "$value": "#f3eede",
           "$type": "color"
         },
         "tertiary": {

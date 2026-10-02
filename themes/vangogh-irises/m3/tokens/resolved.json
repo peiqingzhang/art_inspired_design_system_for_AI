@@ -748,7 +748,7 @@
     "$type": "color"
   },
   "color.sys.dark.on-secondary-container": {
-    "$value": "#f1ecd9",
+    "$value": "#f3eede",
     "$type": "color"
   },
   "color.sys.dark.tertiary": {

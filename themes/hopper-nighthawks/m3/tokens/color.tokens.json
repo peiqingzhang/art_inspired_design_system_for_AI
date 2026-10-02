@@ -596,7 +596,7 @@
       "$description": "Semantic color roles following Material Design 3",
       "light": {
         "primary": {
-          "$value": "{color.ref.primary.40}",
+          "$value": "#328071",
           "$type": "color"
         },
         "on-primary": {

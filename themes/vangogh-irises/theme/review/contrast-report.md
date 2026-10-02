@@ -11,7 +11,13 @@
 | error / on-error | 9.59:1 | PASS | PASS | 7.34:1 | PASS | PASS |
 | error-container / on-error-container | 13.65:1 | PASS | PASS | 7.37:1 | PASS | PASS |
 | surface / on-surface | 5.9:1 | PASS | FAIL | 12.41:1 | PASS | PASS |
-| surface-variant / on-surface-variant | 3.49:1 | FAIL | FAIL | 2.82:1 | FAIL | FAIL |
+| surface-variant / on-surface-variant | 6.98:1 | PASS | FAIL | 4.52:1 | PASS | FAIL |
+| surface / on-surface-variant | 4.61:1 | PASS | FAIL | 7.98:1 | PASS | PASS |
+| surface / primary | 4.65:1 | PASS | FAIL | 9.58:1 | PASS | PASS |
+| surface-container-lowest / on-surface | 8.99:1 | PASS | PASS | 11.02:1 | PASS | PASS |
+| surface-container-lowest / on-surface-variant | 7.03:1 | PASS | PASS | 7.09:1 | PASS | PASS |
+| surface-container-highest / on-surface | 6.45:1 | PASS | FAIL | 12.15:1 | PASS | PASS |
+| surface-container-highest / on-surface-variant | 5.04:1 | PASS | FAIL | 7.82:1 | PASS | PASS |
 | petal-highlight / on-petal-highlight | 8.42:1 | PASS | PASS | 7.95:1 | PASS | PASS |
 | petal-highlight-container / on-petal-highlight-container | 13.92:1 | PASS | PASS | 7.64:1 | PASS | PASS |
 | vase-ochre / on-vase-ochre | 5.96:1 | PASS | FAIL | 7.48:1 | PASS | PASS |
@@ -21,7 +27,4 @@
 - AA: >= 4.5:1 (normal text) -- WCAG 2.1 AA required
 - AAA: >= 7.0:1 -- WCAG 2.1 AAA enhanced
 
-## Failures
-The following pairs fail WCAG AA and should be adjusted:
-- light/surface-variant/on-surface-variant (3.49:1)
-- dark/surface-variant/on-surface-variant (2.82:1)
+## All pairs pass WCAG AA

@@ -1,7 +1,7 @@
 /* hopper-nighthawks-theme -- generated design tokens as CSS custom properties */
 
 :root {
-  --md-sys-color-primary: #2e8383;
+  --md-sys-color-primary: #205b5b;
   --md-sys-color-on-primary: #fffefe;
   --md-sys-color-primary-container: #dceeee;
   --md-sys-color-on-primary-container: #122020;
@@ -24,7 +24,7 @@
   --md-sys-color-surface: #D8C880;
   --md-sys-color-on-surface: #2C5252;
   --md-sys-color-surface-variant: #deecec;
-  --md-sys-color-on-surface-variant: #5A6A5A;
+  --md-sys-color-on-surface-variant: #495649;
   --md-sys-color-surface-container-lowest: #e6daa0;
   --md-sys-color-surface-container-low: #e4d799;
   --md-sys-color-surface-container: #e1d392;
@@ -69,9 +69,9 @@
     --md-sys-color-error-container: #834b15;
     --md-sys-color-on-error-container: #f2e5d8;
     --md-sys-color-surface: #0A1818;
-    --md-sys-color-on-surface: #D8D0A8;
+    --md-sys-color-on-surface: #dbd3af;
     --md-sys-color-surface-variant: #366262;
-    --md-sys-color-on-surface-variant: #6A7A70;
+    --md-sys-color-on-surface-variant: #ced4d0;
     --md-sys-color-surface-container-lowest: #0f2020;
     --md-sys-color-surface-container-low: #0d1f1f;
     --md-sys-color-surface-container: #0c1d1d;

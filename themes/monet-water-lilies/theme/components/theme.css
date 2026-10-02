@@ -28,7 +28,7 @@
   --color-on-secondary: #ffffff;
   --color-on-secondary-container: #171b17;
   --color-on-surface: #2C3652;
-  --color-on-surface-variant: #6A7080;
+  --color-on-surface-variant: #545865;
   --color-on-tertiary: #ffffff;
   --color-on-tertiary-container: #19161c;
   --color-outline: #9AA0B0;
@@ -172,7 +172,7 @@
     --color-on-secondary: #2b3a2b;
     --color-on-secondary-container: #e2e8e2;
     --color-on-surface: #D0D8E0;
-    --color-on-surface-variant: #7A8090;
+    --color-on-surface-variant: #aaaeb8;
     --color-on-tertiary: #33283d;
     --color-on-tertiary-container: #e5e1e9;
     --color-outline: #2A3040;

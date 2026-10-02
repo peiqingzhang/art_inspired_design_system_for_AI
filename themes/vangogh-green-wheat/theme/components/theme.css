@@ -20,14 +20,14 @@
   --color-on-secondary: #ffffff;
   --color-on-secondary-container: #151d1b;
   --color-on-surface: #2C522F;
-  --color-on-surface-variant: #5A7860;
+  --color-on-surface-variant: #4a634f;
   --color-on-tertiary: #fffffe;
   --color-on-tertiary-container: #15181d;
   --color-on-wheat-chartreuse: #ffffff;
   --color-on-wheat-chartreuse-container: #1d2111;
   --color-outline: #8AAA80;
   --color-outline-variant: #bddac2;
-  --color-primary: #4a7c53;
+  --color-primary: #3d6745;
   --color-primary-container: #e1e9e2;
   --color-primary-fixed: #e1e9e2;
   --color-primary-fixed-dim: #bfd8c3;
@@ -44,7 +44,7 @@
   --color-surface-variant: #deece0;
   --color-tertiary: #495b7d;
   --color-tertiary-container: #e0e4ea;
-  --color-wheat-chartreuse: #6e842b;
+  --color-wheat-chartreuse: #697e29;
   --color-wheat-chartreuse-container: #e9eedc;
 
   --radius-extra-large: 32px;
@@ -160,11 +160,11 @@
     --color-on-secondary: #263f39;
     --color-on-secondary-container: #e1e9e7;
     --color-on-surface: #D0E4D0;
-    --color-on-surface-variant: #7A9A8A;
+    --color-on-surface-variant: #c3d2cb;
     --color-on-tertiary: #252f40;
     --color-on-tertiary-container: #e0e4ea;
     --color-on-wheat-chartreuse: #3f4c19;
-    --color-on-wheat-chartreuse-container: #e9eedc;
+    --color-on-wheat-chartreuse-container: #ebefdf;
     --color-outline: #2A4A3A;
     --color-outline-variant: #36623e;
     --color-primary: #bfd8c3;

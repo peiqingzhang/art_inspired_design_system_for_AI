@@ -783,11 +783,11 @@
     "$description": "Color area proportions from source painting (0-1 scale). Dominant surface color is used to generate surface tokens. color-component-map assigns extended painting colors to component roles for expressive rendering in tokens-to-components."
   },
   "color.sys.light.primary": {
-    "$value": "#86281a",
+    "$value": "#f9e5e2",
     "$type": "color"
   },
   "color.sys.light.on-primary": {
-    "$value": "#ffffff",
+    "$value": "#a15246",
     "$type": "color"
   },
   "color.sys.light.primary-container": {
@@ -871,31 +871,31 @@
     "$type": "color"
   },
   "color.sys.light.surface-variant": {
-    "$value": "#eedfdc",
+    "$value": "#b24533",
     "$type": "color"
   },
   "color.sys.light.on-surface-variant": {
-    "$value": "#E8C0B0",
+    "$value": "#f6e7e1",
     "$type": "color"
   },
   "color.sys.light.surface-container-lowest": {
-    "$value": "#d6a797",
+    "$value": "#9d563e",
     "$type": "color"
   },
   "color.sys.light.surface-container-low": {
-    "$value": "#d19482",
+    "$value": "#a2523b",
     "$type": "color"
   },
   "color.sys.light.surface-container": {
-    "$value": "#cd7e6b",
+    "$value": "#a84e38",
     "$type": "color"
   },
   "color.sys.light.surface-container-high": {
-    "$value": "#ca6853",
+    "$value": "#ad4a35",
     "$type": "color"
   },
   "color.sys.light.surface-container-highest": {
-    "$value": "#c74f3b",
+    "$value": "#b24533",
     "$type": "color"
   },
   "color.sys.light.outline": {
@@ -1035,7 +1035,7 @@
     "$type": "color"
   },
   "color.sys.dark.on-surface-variant": {
-    "$value": "#8A6A5A",
+    "$value": "#c2ada2",
     "$type": "color"
   },
   "color.sys.dark.surface-container-lowest": {

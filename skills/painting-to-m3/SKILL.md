@@ -117,6 +117,8 @@ The `--considered-colors` flag documents painting colors that were identified bu
 
 The script automatically generates all output files (token JSON, theme.css, tailwind config, contrast report, design brief, palette review HTML) and prints any WCAG AA failures to stdout. Report any failures to the user and offer to adjust tones before finalizing. **Do not silently ignore contrast failures.**
 
+**Contrast guard.** Before writing files, the script runs `enforce_contrast()`, which also checks body/muted text on every surface container and `primary` used as text on the page. Near-miss pairs are nudged up to 4.5:1 by adjusting HSL lightness only. Adjustments are printed as `contrast guard: light/role: #old -> #new`.
+
 `design-brief.md` is the handoff contract for the `tokens-to-components` skill — it carries mood, typography rationale, considered colors, and design intent.
 
 If the script is unavailable, generate the JSON manually following the template in `references/dtcg-template.json`.

@@ -1,7 +1,7 @@
 /* vangogh-green-wheat-theme -- generated design tokens as CSS custom properties */
 
 :root {
-  --md-sys-color-primary: #4a7c53;
+  --md-sys-color-primary: #3d6745;
   --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: #e1e9e2;
   --md-sys-color-on-primary-container: #151d17;
@@ -24,7 +24,7 @@
   --md-sys-color-surface: #C8DDD0;
   --md-sys-color-on-surface: #2C522F;
   --md-sys-color-surface-variant: #deece0;
-  --md-sys-color-on-surface-variant: #5A7860;
+  --md-sys-color-on-surface-variant: #4a634f;
   --md-sys-color-surface-container-lowest: #e3e8d8;
   --md-sys-color-surface-container-low: #dde6d4;
   --md-sys-color-surface-container: #d6e4d1;
@@ -37,7 +37,7 @@
   --md-sys-color-inverse-primary: #bfd8c3;
   --md-sys-color-scrim: #000000;
   --md-sys-color-shadow: #000000;
-  --md-sys-color-wheat-chartreuse: #6e842b;
+  --md-sys-color-wheat-chartreuse: #697e29;
   --md-sys-color-on-wheat-chartreuse: #ffffff;
   --md-sys-color-wheat-chartreuse-container: #e9eedc;
   --md-sys-color-on-wheat-chartreuse-container: #1d2111;
@@ -67,7 +67,7 @@
     --md-sys-color-surface: #0E1E1A;
     --md-sys-color-on-surface: #D0E4D0;
     --md-sys-color-surface-variant: #36623e;
-    --md-sys-color-on-surface-variant: #7A9A8A;
+    --md-sys-color-on-surface-variant: #c3d2cb;
     --md-sys-color-surface-container-lowest: #132922;
     --md-sys-color-surface-container-low: #122620;
     --md-sys-color-surface-container: #11241e;
@@ -83,6 +83,6 @@
     --md-sys-color-wheat-chartreuse: #d8e5b2;
     --md-sys-color-on-wheat-chartreuse: #3f4c19;
     --md-sys-color-wheat-chartreuse-container: #5f7325;
-    --md-sys-color-on-wheat-chartreuse-container: #e9eedc;
+    --md-sys-color-on-wheat-chartreuse-container: #ebefdf;
   }
 }
