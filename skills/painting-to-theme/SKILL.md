@@ -153,6 +153,8 @@ Use `--review-dir` to write review files (contrast-report.md, design-brief.md, p
 
 The script automatically generates all output files (token JSON, theme.css, tailwind config, contrast report, design brief, palette review HTML) and prints any WCAG AA failures to stdout. Report any failures to the user and offer to adjust tones before finalizing. **Do not silently ignore contrast failures.**
 
+**Contrast guard.** Before writing files, the script runs `enforce_contrast()`, which checks the pairs the components actually render, not just role/on-role pairs: body and muted text on the page and on every surface container, `primary` used as text on the page, and every role/on-role pair (extended colors included). Failing pairs are fixed by nudging HSL lightness while keeping hue and saturation. Text moves first, so the painting's surfaces stay intact whenever possible. If muted text can't work on both the page and `surface-variant` (e.g. pale text on Matisse's red page next to a pale generated panel), `surface-variant` is re-derived from the painting background (`surface-container-highest`). Every adjustment is printed as `contrast guard: light/role: #old -> #new`. Mention notable ones to the user, since a large shift (like primary flipping from dark to light) changes the look.
+
 `design-brief.md` is the handoff contract for the `tokens-to-components` skill — it includes the extended color usage guide so downstream skills know how to apply extended colors to UI roles.
 
 If the script is unavailable, generate the palette review HTML manually following the template in `references/palette-review-template.html`.

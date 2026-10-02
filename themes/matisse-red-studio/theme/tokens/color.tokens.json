@@ -807,11 +807,11 @@
       "$description": "Semantic color roles following Material Design 3",
       "light": {
         "primary": {
-          "$value": "{color.ref.primary.40}",
+          "$value": "#f9e5e2",
           "$type": "color"
         },
         "on-primary": {
-          "$value": "{color.ref.primary.100}",
+          "$value": "#a15246",
           "$type": "color"
         },
         "primary-container": {
@@ -895,31 +895,31 @@
           "$type": "color"
         },
         "surface-variant": {
-          "$value": "{color.ref.neutral-variant.90}",
+          "$value": "#b24533",
           "$type": "color"
         },
         "on-surface-variant": {
-          "$value": "#E8C0B0",
+          "$value": "#f6e7e1",
           "$type": "color"
         },
         "surface-container-lowest": {
-          "$value": "#d6a797",
+          "$value": "#9d563e",
           "$type": "color"
         },
         "surface-container-low": {
-          "$value": "#d19482",
+          "$value": "#a2523b",
           "$type": "color"
         },
         "surface-container": {
-          "$value": "#cd7e6b",
+          "$value": "#a84e38",
           "$type": "color"
         },
         "surface-container-high": {
-          "$value": "#ca6853",
+          "$value": "#ad4a35",
           "$type": "color"
         },
         "surface-container-highest": {
-          "$value": "#c74f3b",
+          "$value": "#b24533",
           "$type": "color"
         },
         "outline": {
@@ -1061,7 +1061,7 @@
           "$type": "color"
         },
         "on-surface-variant": {
-          "$value": "#8A6A5A",
+          "$value": "#c2ada2",
           "$type": "color"
         },
         "surface-container-lowest": {

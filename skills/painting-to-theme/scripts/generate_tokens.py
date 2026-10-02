@@ -757,6 +757,179 @@ def resolve_color_aliases(color_tokens: dict) -> dict:
     return result
 
 
+# ── Contrast guard ──────────────────────────────────────────────────────────
+# Tonal ramps alone don't guarantee contrast once painting-picked surfaces are
+# mixed in (e.g. a mid-tone red page with pale M3 panels). This pass checks the
+# pairs components actually render and nudges HSL lightness -- keeping hue and
+# saturation -- until each pair reaches WCAG AA (4.5:1).
+
+WCAG_AA = 4.5
+
+# Backgrounds that carry on-surface / on-surface-variant text in the components
+TEXT_HOSTS = [
+    "surface",
+    "surface-variant",
+    "surface-container-lowest",
+    "surface-container-low",
+    "surface-container",
+    "surface-container-high",
+    "surface-container-highest",
+]
+
+# Extra pairs reported on top of the role / on-role pairs
+EXTRA_REPORT_PAIRS = [
+    ("surface", "on-surface-variant"),
+    ("surface", "primary"),
+    ("surface-container-lowest", "on-surface"),
+    ("surface-container-lowest", "on-surface-variant"),
+    ("surface-container-highest", "on-surface"),
+    ("surface-container-highest", "on-surface-variant"),
+]
+
+
+def _push_lightness(hex_color: str, against: list, direction: int,
+                    target: float = WCAG_AA, hue_sat: tuple = None):
+    """Move hex_color's HSL lightness in `direction` (+1 lighter, -1 darker) until it
+    reaches `target` contrast against every color in `against`. Returns the new hex,
+    or None if even pure white/black isn't enough. `hue_sat` overrides the hue and
+    saturation used while moving (handy for tinting pure white/black)."""
+    h, s, l = hex_to_hsl(hex_color)
+    if hue_sat:
+        h, s = hue_sat
+    step = 0.5
+    cur = l
+    while 0 <= cur <= 100:
+        candidate = hsl_to_hex(h, s, cur)
+        if all(contrast_ratio(candidate, a) >= target for a in against):
+            return candidate
+        cur += step * direction
+    return None
+
+
+def _direction_away(color: str, reference: str) -> int:
+    """+1 if color is lighter than reference (keep going lighter), else -1."""
+    return 1 if relative_luminance(color) >= relative_luminance(reference) else -1
+
+
+def _fix_foreground(fg: str, against: list, prefer: int, target: float = WCAG_AA):
+    """Fix a text/foreground color against backgrounds, trying `prefer` first."""
+    if all(contrast_ratio(fg, a) >= target for a in against):
+        return fg
+    for direction in (prefer, -prefer):
+        fixed = _push_lightness(fg, against, direction, target)
+        if fixed:
+            return fixed
+    return None
+
+
+def enforce_contrast(color_tokens: dict, painting_surfaces: bool = False) -> list:
+    """Adjust sys tokens in place so every rendered text pair passes WCAG AA.
+
+    Order matters -- foregrounds move before backgrounds so the painting's
+    surfaces are preserved whenever possible:
+      0. (painting surfaces only) if surface-variant fights its text, re-derive it
+         from the painting background (surface-variant := surface-container-highest,
+         as in current M3) instead of the generic pale/dark M3 tone
+      1. on-surface / on-surface-variant vs every text host; if a host can't be
+         satisfied by moving text alone, the host's lightness is moved instead
+      2. primary vs surface (primary is used as text: text buttons, active tabs,
+         focused labels, links), then on-primary vs primary
+      3. every role / on-role pair, including extended painting colors
+
+    Returns a list of human-readable change descriptions.
+    """
+    resolved = resolve_color_aliases(color_tokens)
+    changes = []
+
+    for mode in ("light", "dark"):
+        sys_tokens = color_tokens["color"]["sys"][mode]
+        vals = dict(resolved[mode])
+        original = dict(vals)
+
+        def ratio(a, b):
+            return contrast_ratio(vals[a], vals[b])
+
+        # 0. surface-variant from the painting's own background, but only when
+        #    no muted-text color could work on both the page and the panel
+        #    (e.g. pale text on a red page vs. a pale generated panel)
+        if (painting_surfaces
+                and not sys_tokens["surface"]["$value"].startswith("{")
+                and ratio("surface-variant", "on-surface-variant") < WCAG_AA):
+            side = _direction_away(vals["on-surface"], vals["surface"])
+            if _push_lightness(vals["on-surface-variant"],
+                               [vals["surface"], vals["surface-variant"]], side) is None:
+                vals["surface-variant"] = vals["surface-container-highest"]
+
+        # 1. text on surfaces
+        hosts = [r for r in TEXT_HOSTS if r in vals]
+        polarity = _direction_away(vals["on-surface"], vals["surface"])
+        for fg in ("on-surface", "on-surface-variant"):
+            # must pass on the page itself
+            fixed = _fix_foreground(vals[fg], [vals["surface"]], polarity)
+            vals[fg] = fixed or ("#ffffff" if polarity > 0 else "#000000")
+            polarity = _direction_away(vals["on-surface"], vals["surface"])
+            # then try to pass on every host by moving the text only
+            fixed = _push_lightness(vals[fg], [vals[h] for h in hosts], polarity) \
+                if any(ratio(h, fg) < WCAG_AA for h in hosts) else vals[fg]
+            if fixed:
+                vals[fg] = fixed
+        # hosts that text alone couldn't satisfy: move the host away from the text
+        texts = [vals["on-surface"], vals["on-surface-variant"]]
+        for host in hosts:
+            if host == "surface":
+                continue
+            if min(contrast_ratio(vals[host], t) for t in texts) < WCAG_AA:
+                fixed = _push_lightness(vals[host], texts, -polarity)
+                if fixed:
+                    vals[host] = fixed
+
+        # 2. primary as text on the page, then its on-color
+        if "primary" in vals:
+            prefer = _direction_away(vals["primary"], vals["surface"])
+            fixed = _fix_foreground(vals["primary"], [vals["surface"]], prefer)
+            if fixed:
+                vals["primary"] = fixed
+
+        # 3. role / on-role pairs
+        for role in list(vals):
+            on_role = f"on-{role}"
+            if role.startswith("on-") or on_role not in vals:
+                continue
+            if ratio(role, on_role) >= WCAG_AA:
+                continue
+            prefer = _direction_away(vals[on_role], vals[role])
+            hue_sat = None
+            if hex_to_hsl(vals[on_role])[1] < 5:
+                # white/black on-colors would turn gray when nudged -- tint them
+                # with the role's own hue instead (like an M3 tone 10/100 pair)
+                rh, rs, _ = hex_to_hsl(vals[role])
+                hue_sat = (rh, rs * 0.6)
+            # a) push the on-color further in its own direction
+            fixed = _push_lightness(vals[on_role], [vals[role]], prefer, hue_sat=hue_sat)
+            if fixed:
+                vals[on_role] = fixed
+                continue
+            # b) move the role color away from its on-color (keeps white-on-color
+            #    buttons); primary must also keep passing on the page (step 2)
+            keep = [vals[on_role]] + ([vals["surface"]] if role == "primary" else [])
+            fixed = _push_lightness(vals[role], keep, -prefer)
+            if fixed:
+                vals[role] = fixed
+                continue
+            # c) last resort: flip the on-color to the other side
+            fixed = _push_lightness(vals[on_role], [vals[role]], -prefer, hue_sat=hue_sat)
+            if fixed:
+                vals[on_role] = fixed
+
+        for role, new_hex in vals.items():
+            if new_hex.lower() != original[role].lower():
+                sys_tokens[role] = {"$value": new_hex, "$type": "color"}
+                before = original[role]
+                changes.append(f"{mode}/{role}: {before} -> {new_hex}")
+
+    return changes
+
+
 def write_contrast_report(color_tokens: dict, output_dir: str, extended: dict = None):
     """Check WCAG contrast for semantic color pairs and write contrast-report.md."""
     if extended is None:
@@ -775,6 +948,7 @@ def write_contrast_report(color_tokens: dict, output_dir: str, extended: dict = 
         ("surface", "on-surface"),
         ("surface-variant", "on-surface-variant"),
     ]
+    pairs += EXTRA_REPORT_PAIRS
 
     # Extended color pairs
     for ext_name in extended:
@@ -1363,6 +1537,10 @@ def main():
 
     # Generate all token files
     color_tokens = build_color_tokens(colors, proportions, surfaces, extended, surfaces_dark, color_roles)
+    # Painting-picked surfaces can clash with generated tones -- fix before writing
+    adjustments = enforce_contrast(color_tokens, painting_surfaces=bool(surfaces or surfaces_dark))
+    for change in adjustments:
+        print(f"  contrast guard: {change}")
     typography_tokens = build_typography_tokens(args.font_display, args.font_body)
     shape_tokens = build_shape_tokens(args.corner_style)
     spacing_tokens = build_spacing_tokens()

@@ -807,7 +807,7 @@
       "$description": "Semantic color roles following Material Design 3",
       "light": {
         "primary": {
-          "$value": "{color.ref.primary.40}",
+          "$value": "#205b5b",
           "$type": "color"
         },
         "on-primary": {
@@ -899,7 +899,7 @@
           "$type": "color"
         },
         "on-surface-variant": {
-          "$value": "#5A6A5A",
+          "$value": "#495649",
           "$type": "color"
         },
         "surface-container-lowest": {
@@ -1053,7 +1053,7 @@
           "$type": "color"
         },
         "on-surface": {
-          "$value": "#D8D0A8",
+          "$value": "#dbd3af",
           "$type": "color"
         },
         "surface-variant": {
@@ -1061,7 +1061,7 @@
           "$type": "color"
         },
         "on-surface-variant": {
-          "$value": "#6A7A70",
+          "$value": "#ced4d0",
           "$type": "color"
         },
         "surface-container-lowest": {

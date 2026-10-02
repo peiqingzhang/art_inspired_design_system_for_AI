@@ -26,7 +26,7 @@ module.exports = {
         'surface': '#D8CDB0',
         'on-surface': '#2C3952',
         'surface-variant': '#dee4ec',
-        'on-surface-variant': '#7A7060',
+        'on-surface-variant': '#5e574a',
         'surface-container-lowest': '#e7e0cc',
         'surface-container-low': '#e4dcc6',
         'surface-container': '#e1d8c0',

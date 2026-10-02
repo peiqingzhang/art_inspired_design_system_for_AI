@@ -679,7 +679,7 @@
     "$type": "color"
   },
   "color.sys.light.on-surface-variant": {
-    "$value": "#6A7068",
+    "$value": "#555a54",
     "$type": "color"
   },
   "color.sys.light.surface-container-lowest": {
@@ -807,7 +807,7 @@
     "$type": "color"
   },
   "color.sys.dark.on-surface-variant": {
-    "$value": "#8A8A78",
+    "$value": "#b6b6ab",
     "$type": "color"
   },
   "color.sys.dark.surface-container-lowest": {

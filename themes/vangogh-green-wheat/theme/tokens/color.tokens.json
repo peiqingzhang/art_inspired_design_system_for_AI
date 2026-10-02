@@ -708,7 +708,7 @@
       "$description": "Semantic color roles following Material Design 3",
       "light": {
         "primary": {
-          "$value": "{color.ref.primary.40}",
+          "$value": "#3d6745",
           "$type": "color"
         },
         "on-primary": {
@@ -800,7 +800,7 @@
           "$type": "color"
         },
         "on-surface-variant": {
-          "$value": "#5A7860",
+          "$value": "#4a634f",
           "$type": "color"
         },
         "surface-container-lowest": {
@@ -852,7 +852,7 @@
           "$type": "color"
         },
         "wheat-chartreuse": {
-          "$value": "{color.ref.wheat-chartreuse.40}",
+          "$value": "#697e29",
           "$type": "color"
         },
         "on-wheat-chartreuse": {
@@ -946,7 +946,7 @@
           "$type": "color"
         },
         "on-surface-variant": {
-          "$value": "#7A9A8A",
+          "$value": "#c3d2cb",
           "$type": "color"
         },
         "surface-container-lowest": {
@@ -1010,7 +1010,7 @@
           "$type": "color"
         },
         "on-wheat-chartreuse-container": {
-          "$value": "{color.ref.wheat-chartreuse.90}",
+          "$value": "#ebefdf",
           "$type": "color"
         }
       }

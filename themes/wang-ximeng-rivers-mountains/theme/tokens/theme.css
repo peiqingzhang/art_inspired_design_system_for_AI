@@ -1,7 +1,7 @@
 /* wang-ximeng-rivers-mountains-theme -- generated design tokens as CSS custom properties */
 
 :root {
-  --md-sys-color-primary: #368273;
+  --md-sys-color-primary: #24564c;
   --md-sys-color-on-primary: #fffefe;
   --md-sys-color-primary-container: #deece9;
   --md-sys-color-on-primary-container: #131f1d;
@@ -24,7 +24,7 @@
   --md-sys-color-surface: #C8C0A0;
   --md-sys-color-on-surface: #2A3830;
   --md-sys-color-surface-variant: #deece9;
-  --md-sys-color-on-surface-variant: #5A6858;
+  --md-sys-color-on-surface-variant: #465145;
   --md-sys-color-surface-container-lowest: #e0dcc7;
   --md-sys-color-surface-container-low: #dbd6bf;
   --md-sys-color-surface-container: #d6d0b7;
@@ -73,7 +73,7 @@
     --md-sys-color-error-container: #834815;
     --md-sys-color-on-error-container: #f2e4d8;
     --md-sys-color-surface: #0A1818;
-    --md-sys-color-on-surface: #D0D0B8;
+    --md-sys-color-on-surface: #d2d2bb;
     --md-sys-color-surface-variant: #376159;
     --md-sys-color-on-surface-variant: #C8D8C0;
     --md-sys-color-surface-container-lowest: #192828;

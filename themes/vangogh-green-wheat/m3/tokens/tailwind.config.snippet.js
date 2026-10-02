@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#418233',
+        'primary': '#418133',
         'on-primary': '#ffffff',
         'primary-container': '#e0eddd',
         'on-primary-container': '#152012',
@@ -15,7 +15,7 @@ module.exports = {
         'on-secondary': '#ffffff',
         'secondary-container': '#e0e5ea',
         'on-secondary-container': '#14191e',
-        'tertiary': '#818139',
+        'tertiary': '#797935',
         'on-tertiary': '#ffffff',
         'tertiary-container': '#ececde',
         'on-tertiary-container': '#1f1f13',

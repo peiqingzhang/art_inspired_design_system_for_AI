@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#2e8383',
+        'primary': '#205b5b',
         'on-primary': '#fffefe',
         'primary-container': '#dceeee',
         'on-primary-container': '#122020',
@@ -26,7 +26,7 @@ module.exports = {
         'surface': '#D8C880',
         'on-surface': '#2C5252',
         'surface-variant': '#deecec',
-        'on-surface-variant': '#5A6A5A',
+        'on-surface-variant': '#495649',
         'surface-container-lowest': '#e6daa0',
         'surface-container-low': '#e4d799',
         'surface-container': '#e1d392',

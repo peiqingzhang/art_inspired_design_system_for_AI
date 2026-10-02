@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#4a7c53',
+        'primary': '#3d6745',
         'on-primary': '#ffffff',
         'primary-container': '#e1e9e2',
         'on-primary-container': '#151d17',
@@ -26,7 +26,7 @@ module.exports = {
         'surface': '#C8DDD0',
         'on-surface': '#2C522F',
         'surface-variant': '#deece0',
-        'on-surface-variant': '#5A7860',
+        'on-surface-variant': '#4a634f',
         'surface-container-lowest': '#e3e8d8',
         'surface-container-low': '#dde6d4',
         'surface-container': '#d6e4d1',
@@ -39,7 +39,7 @@ module.exports = {
         'inverse-primary': '#bfd8c3',
         'scrim': '#000000',
         'shadow': '#000000',
-        'wheat-chartreuse': '#6e842b',
+        'wheat-chartreuse': '#697e29',
         'on-wheat-chartreuse': '#ffffff',
         'wheat-chartreuse-container': '#e9eedc',
         'on-wheat-chartreuse-container': '#1d2111',

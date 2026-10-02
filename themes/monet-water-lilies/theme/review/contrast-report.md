@@ -11,7 +11,13 @@
 | error / on-error | 9.61:1 | PASS | PASS | 7.34:1 | PASS | PASS |
 | error-container / on-error-container | 13.65:1 | PASS | PASS | 7.38:1 | PASS | PASS |
 | surface / on-surface | 7.67:1 | PASS | PASS | 12.42:1 | PASS | PASS |
-| surface-variant / on-surface-variant | 3.79:1 | FAIL | FAIL | 2.54:1 | FAIL | FAIL |
+| surface-variant / on-surface-variant | 5.43:1 | PASS | FAIL | 4.52:1 | PASS | FAIL |
+| surface / on-surface-variant | 4.55:1 | PASS | FAIL | 8.06:1 | PASS | PASS |
+| surface / primary | 4.63:1 | PASS | FAIL | 10.38:1 | PASS | PASS |
+| surface-container-lowest / on-surface | 9.19:1 | PASS | PASS | 11.69:1 | PASS | PASS |
+| surface-container-lowest / on-surface-variant | 5.45:1 | PASS | FAIL | 7.58:1 | PASS | PASS |
+| surface-container-highest / on-surface | 7.92:1 | PASS | PASS | 12.32:1 | PASS | PASS |
+| surface-container-highest / on-surface-variant | 4.7:1 | PASS | FAIL | 7.99:1 | PASS | PASS |
 | lily-peach / on-lily-peach | 6.05:1 | PASS | FAIL | 7.62:1 | PASS | PASS |
 | lily-peach-container / on-lily-peach-container | 13.94:1 | PASS | PASS | 6.15:1 | PASS | FAIL |
 | cloud-cream / on-cloud-cream | 5.43:1 | PASS | FAIL | 7.54:1 | PASS | PASS |
@@ -21,7 +27,4 @@
 - AA: >= 4.5:1 (normal text) -- WCAG 2.1 AA required
 - AAA: >= 7.0:1 -- WCAG 2.1 AAA enhanced
 
-## Failures
-The following pairs fail WCAG AA and should be adjusted:
-- light/surface-variant/on-surface-variant (3.79:1)
-- dark/surface-variant/on-surface-variant (2.54:1)
+## All pairs pass WCAG AA

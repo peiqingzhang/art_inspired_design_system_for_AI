@@ -12,6 +12,12 @@
 | error-container / on-error-container | 13.65:1 | pass | pass | 7.37:1 | pass | pass |
 | surface / on-surface | 16.77:1 | pass | pass | 15.19:1 | pass | pass |
 | surface-variant / on-surface-variant | 7.14:1 | pass | pass | 5.51:1 | pass | --- |
+| surface / on-surface-variant | 8.66:1 | pass | pass | 11.62:1 | pass | pass |
+| surface / primary | 7.93:1 | pass | pass | 11.06:1 | pass | pass |
+| surface-container-lowest / on-surface | 17.65:1 | pass | pass | 15.68:1 | pass | pass |
+| surface-container-lowest / on-surface-variant | 9.11:1 | pass | pass | 11.99:1 | pass | pass |
+| surface-container-highest / on-surface | 13.96:1 | pass | pass | 9.49:1 | pass | pass |
+| surface-container-highest / on-surface-variant | 7.2:1 | pass | pass | 7.26:1 | pass | pass |
 
 ## Legend
 - AA: >= 4.5:1 (normal text) — WCAG 2.1 AA required

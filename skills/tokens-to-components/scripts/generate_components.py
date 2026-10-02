@@ -2117,6 +2117,12 @@ def generate_preview_html(tokens: dict, components: list, theme_name: str = "") 
     proportion_html = ""
     if proportions:
         role_to_color = {"primary": "var(--color-primary)", "secondary": "var(--color-secondary)", "tertiary": "var(--color-tertiary)", "neutral": "var(--color-outline)", "accent": "var(--color-tertiary-container)"}
+        # Show the painting's own key colors (ref tone 40), not the UI roles --
+        # the contrast guard may move sys primary far from the painting's hue
+        for role in ("primary", "secondary", "tertiary"):
+            ref_hex = get_val(tokens, f"color.ref.{role}.40", "")
+            if ref_hex:
+                role_to_color[role] = ref_hex
         segs = []
         for role, pct in sorted(proportions.items(), key=lambda x: -x[1]):
             color = role_to_color.get(role, "var(--color-outline)")

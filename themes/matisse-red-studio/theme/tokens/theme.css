@@ -1,8 +1,8 @@
 /* matisse-red-studio-theme -- generated design tokens as CSS custom properties */
 
 :root {
-  --md-sys-color-primary: #86281a;
-  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary: #f9e5e2;
+  --md-sys-color-on-primary: #a15246;
   --md-sys-color-primary-container: #f1dcd9;
   --md-sys-color-on-primary-container: #23110f;
   --md-sys-color-primary-fixed: #f1dcd9;
@@ -23,13 +23,13 @@
   --md-sys-color-on-error-container: #240f0e;
   --md-sys-color-surface: #B84030;
   --md-sys-color-on-surface: #F2E7E2;
-  --md-sys-color-surface-variant: #eedfdc;
-  --md-sys-color-on-surface-variant: #E8C0B0;
-  --md-sys-color-surface-container-lowest: #d6a797;
-  --md-sys-color-surface-container-low: #d19482;
-  --md-sys-color-surface-container: #cd7e6b;
-  --md-sys-color-surface-container-high: #ca6853;
-  --md-sys-color-surface-container-highest: #c74f3b;
+  --md-sys-color-surface-variant: #b24533;
+  --md-sys-color-on-surface-variant: #f6e7e1;
+  --md-sys-color-surface-container-lowest: #9d563e;
+  --md-sys-color-surface-container-low: #a2523b;
+  --md-sys-color-surface-container: #a84e38;
+  --md-sys-color-surface-container-high: #ad4a35;
+  --md-sys-color-surface-container-highest: #b24533;
   --md-sys-color-outline: #984030;
   --md-sys-color-outline-variant: #e7b7b0;
   --md-sys-color-inverse-surface: #531a12;
@@ -71,7 +71,7 @@
     --md-sys-color-surface: #1A0A08;
     --md-sys-color-on-surface: #E8D0C0;
     --md-sys-color-surface-variant: #772b21;
-    --md-sys-color-on-surface-variant: #8A6A5A;
+    --md-sys-color-on-surface-variant: #c2ada2;
     --md-sys-color-surface-container-lowest: #230f0c;
     --md-sys-color-surface-container-low: #210d0b;
     --md-sys-color-surface-container: #1f0c0a;
